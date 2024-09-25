@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/flag-icon.min.css" rel="stylesheet">
+    <!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="css/t-datepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="css/t-datepicker-blue.css" rel="stylesheet" type="text/css">
+    <link href="css/rSlider.min.css" rel="stylesheet" type="text/css">
+    <link href="css/pgwslider.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/position-style.css" rel="stylesheet">
+    <style>
+      .border
+      {
+        border: 1px solid #e9e9e9;
+      }
+      .mr-10
+      {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default topnav" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <!--/.navbar-header-->
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#" class="top-head-currency">&#8377;</a></li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="flag-icon flag-icon-in flag-icon-squared"></span></a>
+                      <ul class="dropdown-menu multi-column columns-3">
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <ul class="multi-column-dropdown">
+                              <li><a href="#"><span class="flag-icon flag-icon-in flag-icon-squared mr-2"></span>English(US)</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-in flag-icon-squared mr-2"></span>English(UK)</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-fr flag-icon-squared mr-2"></span>Français</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-4">
+                            <ul class="multi-column-dropdown">
+                              <li><a href="#"><span class="flag-icon flag-icon-fr flag-icon-squared mr-2"></span>Français</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-cn flag-icon-squared mr-2"></span>简体中文</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-4">
+                            <ul class="multi-column-dropdown">
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                            </ul>
+                          </div>
+                        </div><!--row-->
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h4 class="all-ltext">All Language</h4>
+                          </div><!--col-sm-12-->
+
+                          <div class="col-sm-4">
+                            <ul class="multi-column-dropdown">
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                            </ul>
+                          </div><!--col-sm-4-->
+                          <div class="col-sm-4">
+                            <ul class="multi-column-dropdown">
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                            </ul>
+                          </div><!--col-sm-4-->
+                          <div class="col-sm-4">
+                            <ul class="multi-column-dropdown">
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                            </ul>
+                          </div><!--col-sm-4-->
+                        </div><!--row-->
+                      </ul>
+                  </li>
+                  <li><a href="#">Link</a></li>
+                  <li><a class="btn list-property-btn" href="#" role="button">List Your Property</a></li>
+                  <li><a class="btn btn-default log-regbtn" href="#" role="button">Register</a></li>
+                  <li><a class="btn btn-default log-regbtn" href="#" role="button">Sign In</a></li>
+                </ul>
+            </div>
+            <!--/.navbar-collapse-->
+        </div><!--container-->
+      </nav>
+      <!--/.navbar-->
+
+    </header>
+    <!--/header-->
+
+    <!--/payment-step section-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                      <!-- <div class="progress">
+                        <div class="circle done">
+                          <span class="label">1</span>
+                          <span class="title">Your Apartments</span>
+                        </div>
+                        <span class="bar"></span>
+                        <div class="circle active">
+                          <span class="label">2</span>
+                          <span class="title">Enter your details</span>
+                        </div>
+                        <span class="bar half"></span>
+                        <div class="circle">
+                          <span class="label">3</span>
+                          <span class="title">Final Details</span>
+                        </div>
+                    </div>--><!--proggress end-->
+                    <br>
+                    <ul class="bui-nav-progress">
+                      <li class="bui-nav-progress__item">
+                        <span class="bui-nav-progress__indicator" aria-hidden="true">
+                          <svg class="bk-icon -streamline-checkmark_fill bui-nav-progress__icon" fill="currentColor" height="24" width="24" viewBox="0 0 128 128" role="presentation" aria-hidden="true" focusable="false"><path d="M56.33 102a6 6 0 0 1-4.24-1.75L19.27 67.54A6.014 6.014 0 1 1 27.74 59l27.94 27.88 44-58.49a6 6 0 1 1 9.58 7.22l-48.17 64a5.998 5.998 0 0 1-4.34 2.39z"></path></svg>
+                        </span>
+                        <strong class="bui-nav-progress__title" aria-current="false">
+                          Your selection
+                        </strong>
+                      </li>
+                      <li role="presentation" class="bui-nav-progress__divider"></li>
+                      <li class="bui-nav-progress__item bui-nav-progress__item--active">
+                        <span class="bui-nav-progress__indicator" aria-hidden="true">
+                        2
+                        </span>
+                        <strong class="bui-nav-progress__title" aria-current="step">
+                        Your details
+                        </strong>
+                      </li>
+                      <li role="presentation" class="bui-nav-progress__divider"></li>
+                      <li class="bui-nav-progress__item bui-nav-progress__item--disabled">
+                        <span class="bui-nav-progress__indicator" aria-hidden="true">
+                        3
+                        </span>
+                        <strong class="bui-nav-progress__title" aria-current="false">
+                        Final step
+                        </strong>
+                      </li>
+                    </ul>
+                    <ul class="list-unstyled multi-steps">
+                      <li>Start</li>
+                      <li class="is-active">First Step</li>
+                      <li >Middle Stage</li>
+                    </ul>
+                </div><!--col-md-12-->
+            </div><!--/row-->
+        </div><!--/.container-->
+    </section>
+    <!--/end payment-section section-->
+
+    <!-- payment step content section -->
+    <section class="pay-step-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="payment-left-wrapper">
+                      <div class="panel panel-info booking-panel">
+                        <div class="panel-heading">Your Booking Details</div>
+                        <div class="panel-body">
+                          <div class="panel-list">
+                              <label>Check-in:</label>
+                              <p><b>Wednesday, 17 April, 2019</b><span> from 15:00</span></p>
+                          </div><!--panel-list-->
+                          <div class="panel-list">
+                              <label>Check-out:</label>
+                              <p><b>Saterday, 20 April, 2019</b><span> until 10:00</span></p>
+                          </div><!--panel-list-->
+                          <div class="panel-list">
+                              <label>Total lenth of stay:</label>
+                              <p><span> 3 nights</span></p>
+                              <a href="#">Travelling on different dates</a>
+                          </div><!--panel-list-->
+                          <p class="panel-divider"></p>
+                          <div class="panel-list">
+                              <label>You Selected:</label>
+                              <p><span> 2 x Basement Studio - No view</span></p>
+                              <a href="#">Change your selection</a>
+                          </div><!--panel-list-->
+                        </div><!--//panel-body-->
+                      </div><!--//panel-->
+                      <div class="panel panel-info booking-panel">
+                        <div class="panel-heading">Your Booking includes</div>
+                        <div class="panel-body">
+                          <div class="roomtype-block panel-roomtype">
+                              <ul>
+                                <li><span>Free Wifi</span></li>
+                                <li><span>Discount at London Attractions</span></li>
+                              </ul>
+                          </div>
+                        </div><!--//panel-body-->
+                      </div><!--//panel-->
+
+                      <div class="panel panel-info booking-panel">
+                        <div class="panel-heading">Your Price summary</div>
+                        <div class="panel-body">
+                          <ul class="p-summary-ul">
+                                <li>
+                                  <span class="sumleftspan">2 apartments</span>
+                                  <span class="sumrightspan">€ 632</span>
+                                </li>
+                                <li>
+                                  <span class="sumleftspan">20% VAT</span>
+                                  <span class="sumrightspan">€ 126</span>
+                                </li>
+                          </ul>
+                        </div><!--//panel-body-->
+                        <div class="infopanel-bg">
+                          <ul class="price-ul">
+                              <li>
+                                <div class="pull-left">
+                                    <span class="span-big">Price</span>
+                                    <span class="span-small"><small>(Your Currency)</small></span>
+                                </div>
+                                <div class="pull-right">
+                                  <span class="span-big">€ 758</span>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="pull-left">
+                                    <span class="span-small">Property Currency</span>
+                                    <span class="span-small">In GBP</span>
+                                </div>
+                                <div class="pull-right">
+                                  <span class="span-small"><span class="text-linethrough text-decoration-danger">€ 1,204.50 </span><i class="fa fa-question-circle text-warning"></i> € 651</span>
+                                </div>
+                              </li>
+
+                          </ul>
+                        </div><!--infopanel-bg-->
+                        <div class="panel-body">
+                          <div class="panel-list">
+                                <p><small>* This price is converted to show you the approximate cost in €. You'll pay in £. The exchange rate may change before you pay.</small></p>
+                                <p><small>Bear in mind that your card issuer may change you a foreign transaction fee.</small></p>
+                          </div><!--//panel-list-->
+                        </div><!--panel-body-->
+                      </div><!--//panel-->
+
+                      <div class="panel panel-info booking-panel">
+                        <div class="panel-heading">Sign in for Genius prices<span class="pull-right"><img src="images/genius-icon.png" alt></span></div>
+                        <div class="panel-body">
+                          <div class="media">
+                            <div class="media-left">
+                              <div class="gprice-img">
+                                <img src="images/price-icon.jpg" class="media-object" style="width:80px">
+                              </div>
+                            </div>
+                            <div class="media-body">
+                              <p><small>Genius users can save at least 10% on select accomodation. Sign in to see if you're eligible </small><a href="#" class="text-underline">Sign in</a></p>
+                            </div>
+                          </div><!--media-->
+                        </div><!--//panel-body-->
+                      </div><!--//panel-->
+
+                      <div class="panel panel-info booking-panel">
+                        <div class="panel-heading">How much will it cost to cancel?</div>
+                        <div class="panel-body">
+                          <ul class="p-summary-ul">
+                                <li>
+                                  <span class="sumleftspan"><b>If you cancel, you'll pay</b></span>
+                                  <span class="sumrightspan">€ 758</span>
+                                </li>
+                          </ul>
+                        </div><!--//panel-body-->
+                      </div><!--//panel-->
+                      <div class="alert alert-danger limited-alert clearfix">
+                                <div class="limit-ico">
+                                      <span class="fa fa-clock-o"></span>
+                                </div><!-- book-ico -->
+                                <span class="limit-msg"><strong>Limited supply in London: 3star hotels</strong> Prices may go up. So secure your reservation Today.</span>
+                      </div><!--alert-->
+                      <div class="panel panel-info booking-panel">
+                        <div class="panel-heading">Location Highlights</div>
+                        <div class="panel-body">
+                          <div class="">
+                              <ul class="panel-loc-ul">
+                                <li>
+                                  <span>
+                                    <i class="fa fa-subway"></i>
+                                  </span>
+                                  <div class="loc-right">
+                                    <b>Public tranportation nearby</b><br><span>Holloway road (800m)</span>
+                                  </div>
+                                </li>
+                                <li>
+                                  <span>
+                                    <i class="fa fa-home"></i>
+                                  </span>
+                                  <div class="loc-right">
+                                    <b>Landmark in the area</b><br><span>Holloway road (800m)</span>
+                                  </div>
+                                </li>
+                              </ul>
+                          </div>
+                        </div><!--//panel-body-->
+                      </div><!--//panel-->
+                    </div><!--payment-left-wrapper-->
+                </div><!--col-md-3-->
+                <div class="col-md-9">
+                  <section class="hotel-det-slidewrapper px-4">
+                    <div class="row mb-4">
+                      <div class="col-md-4">
+
+                            <ul class="pgwSlider">
+                              <li><img src="images/hotel-gallery/gallery1.jpg" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars"></li>
+                              <li><img src="images/hotel-gallery/gallery2.jpg" alt="Montréal, QC, Canada" data-large-src="images/hotel-gallery/gallery2.jpg"></li>
+                              <li><img src="images/hotel-gallery/gallery3.jpg" alt="Montréal, QC, Canada" data-large-src="images/hotel-gallery/gallery3.jpg"></li>
+                              <li><img src="images/hotel-gallery/gallery1.jpg" alt="Montréal, QC, Canada" data-large-src="images/hotel-gallery/gallery1.jpg"></li>
+
+                            </ul>
+
+                      </div><!--col-md-4-->
+                      <div class="col-md-8">
+                        <h3 class="hotel-det-name">Native Camden
+                            <p><span class="star-span text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                            <span class="thumbsup-span text-warning"><i class="fa fa-thumbs-up"></i></span><button class="btn btn-primary gr-value-btn" type="submit">Great Value Today</button></p>
+                        </h3>
+                        <p class="text-muted"><span class="hot-det-loc-ico"><img src="images/location-icon.jpg" alt></span>376-380 Camden Road, Islington, London, N7 0LG, United Kingdom</p>
+                        <p><b class="text-success">This property is in a good location. Guests have rated it 8.2!</b></p>
+                      </div><!--col-md-8-->
+                    </div><!--row-->
+                    <div class="row">
+                      <div class="alert alert-success clearfix">
+                                <span class="fa fa-check-circle text-success mr-4"></span>
+
+                                <span class="limit-msg">Congratulation you have choosen<strong>Cheapest Apartment</strong> at Native camden. <b>Dont miss out Book now.</b></span>
+                      </div><!--alert-->
+                    </div><!--row-->
+                    <div class="row">
+                      <div class="panel border">
+                        <div class="panel-body">
+                          <h4 class="page-head4ing"><strong>Enter Your Details</strong></h4>
+                          <p><span><i class="fa fa-check-circle text-success mr-10" aria-hidden="true"></i></span> Free Cancellation until 23:59 on 8 September 2022 <span><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i></a></span></p>
+                          <p><span><i class="fa fa-check-circle text-success mr-10" aria-hidden="true"></i></span> You'll get the entire villa to yourseld! </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="property-card">
+                        <div class="property-card-div">
+                          <div class="property-card-leftbox">
+                            <div class="property-imagebox">
+                              <a href="#">
+                                <img src="https://cf.bstatic.com/xdata/images/hotel/square200/308751162.webp?k=6628d87c331f7d32afc2190a7e4204b2fda459db9660592c74e67283fe176b90&o=&s=1" alt="">
+                              </a>
+                              <div class="save-icon">
+                                <span>
+                                  <a href="#">
+                                    <svg viewBox="0 0 128 128" width="1em" height="1em"><path d="M64 112a3.6 3.6 0 0 1-2-.5 138.8 138.8 0 0 1-44.2-38c-10-14.4-10.6-26-9.4-33.2a29 29 0 0 1 22.9-23.7c11.9-2.4 24 2.5 32.7 13a33.7 33.7 0 0 1 32.7-13 29 29 0 0 1 22.8 23.7c1.3 7.2.6 18.8-9.3 33.3-9.1 13.1-24 25.9-44.2 37.9a3.6 3.6 0 0 1-2 .5z"></path></svg>
+                                  </a>
+                                  
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="property-card-rightbox">
+                            <div class="property-content">
+                              <div class="property-content-header">
+                                <div class="p-name-block">
+                                  <h3>
+                                    <a href="#">
+                                      Holiday Inn Express Kolkata Airport, an IHG Hotel 
+                                      <span class="cb5ebe3ffb">
+                                        <div class="e4755bbd60">
+                                          <div data-testid="rating-stars" class="fbb11b26f5" role="img">
+                                            <span aria-hidden="true" class="b6dc9a9e69 adc357e4f1 fe621d6382">
+                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.555 8.729a1.505 1.505 0 0 0-1.406-.98h-6.087a.5.5 0 0 1-.472-.334l-2.185-6.193a1.5 1.5 0 0 0-2.81 0l-.005.016-2.18 6.177a.5.5 0 0 1-.471.334H1.85A1.5 1.5 0 0 0 .887 10.4l5.184 4.3a.5.5 0 0 1 .155.543l-2.178 6.531a1.5 1.5 0 0 0 2.31 1.684l5.346-3.92a.5.5 0 0 1 .591 0l5.344 3.919a1.5 1.5 0 0 0 2.312-1.683l-2.178-6.535a.5.5 0 0 1 .155-.543l5.194-4.306a1.5 1.5 0 0 0 .433-1.661z"></path></svg>
+                                            </span>
+                                            <span aria-hidden="true" class="b6dc9a9e69 adc357e4f1 fe621d6382">
+                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.555 8.729a1.505 1.505 0 0 0-1.406-.98h-6.087a.5.5 0 0 1-.472-.334l-2.185-6.193a1.5 1.5 0 0 0-2.81 0l-.005.016-2.18 6.177a.5.5 0 0 1-.471.334H1.85A1.5 1.5 0 0 0 .887 10.4l5.184 4.3a.5.5 0 0 1 .155.543l-2.178 6.531a1.5 1.5 0 0 0 2.31 1.684l5.346-3.92a.5.5 0 0 1 .591 0l5.344 3.919a1.5 1.5 0 0 0 2.312-1.683l-2.178-6.535a.5.5 0 0 1 .155-.543l5.194-4.306a1.5 1.5 0 0 0 .433-1.661z"></path></svg>
+                                            </span>
+                                            <span aria-hidden="true" class="b6dc9a9e69 adc357e4f1 fe621d6382">
+                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.555 8.729a1.505 1.505 0 0 0-1.406-.98h-6.087a.5.5 0 0 1-.472-.334l-2.185-6.193a1.5 1.5 0 0 0-2.81 0l-.005.016-2.18 6.177a.5.5 0 0 1-.471.334H1.85A1.5 1.5 0 0 0 .887 10.4l5.184 4.3a.5.5 0 0 1 .155.543l-2.178 6.531a1.5 1.5 0 0 0 2.31 1.684l5.346-3.92a.5.5 0 0 1 .591 0l5.344 3.919a1.5 1.5 0 0 0 2.312-1.683l-2.178-6.535a.5.5 0 0 1 .155-.543l5.194-4.306a1.5 1.5 0 0 0 .433-1.661z"></path></svg>
+                                            </span>
+                                            <span aria-hidden="true" class="b6dc9a9e69 adc357e4f1 fe621d6382">
+                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.555 8.729a1.505 1.505 0 0 0-1.406-.98h-6.087a.5.5 0 0 1-.472-.334l-2.185-6.193a1.5 1.5 0 0 0-2.81 0l-.005.016-2.18 6.177a.5.5 0 0 1-.471.334H1.85A1.5 1.5 0 0 0 .887 10.4l5.184 4.3a.5.5 0 0 1 .155.543l-2.178 6.531a1.5 1.5 0 0 0 2.31 1.684l5.346-3.92a.5.5 0 0 1 .591 0l5.344 3.919a1.5 1.5 0 0 0 2.312-1.683l-2.178-6.535a.5.5 0 0 1 .155-.543l5.194-4.306a1.5 1.5 0 0 0 .433-1.661z"></path></svg>
+                                            </span>
+                                            <span aria-hidden="true" class="b6dc9a9e69 adc357e4f1 fe621d6382">
+                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.555 8.729a1.505 1.505 0 0 0-1.406-.98h-6.087a.5.5 0 0 1-.472-.334l-2.185-6.193a1.5 1.5 0 0 0-2.81 0l-.005.016-2.18 6.177a.5.5 0 0 1-.471.334H1.85A1.5 1.5 0 0 0 .887 10.4l5.184 4.3a.5.5 0 0 1 .155.543l-2.178 6.531a1.5 1.5 0 0 0 2.31 1.684l5.346-3.92a.5.5 0 0 1 .591 0l5.344 3.919a1.5 1.5 0 0 0 2.312-1.683l-2.178-6.535a.5.5 0 0 1 .155-.543l5.194-4.306a1.5 1.5 0 0 0 .433-1.661z"></path></svg>
+                                            </span>
+                                            <span data-testid="preferred-badge" class="c79b3cbed2" aria-hidden="true">
+                                              <svg viewBox="0 0 128 128" width="1em" height="1em"><path d="M112 8H16a8 8 0 0 0-8 8v96a8 8 0 0 0 8 8h96a8 8 0 0 0 8-8V16a8 8 0 0 0-8-8zM48 96H24V58h24zm56-25a8.7 8.7 0 0 1-2 6 8.9 8.9 0 0 1 1 4 6.9 6.9 0 0 1-5 7c-.5 4-4.8 8-9 8H56V58l10.3-23.3a5.4 5.4 0 0 1 10.1 2.7 10.3 10.3 0 0 1-.6 2.7L72 52h23c4.5 0 9 3.5 9 8a9.2 9.2 0 0 1-2 5.3 7.5 7.5 0 0 1 2 5.7z"></path></svg>
+                                            </span>
+                                          </div>
+                                          
+                                        </div>
+                                      </span>
+                                      
+                                    </a>
+                                    
+                                  </h3>
+                                  <div>
+                                    <a href="#" class="location">
+                                      <span>Salt Lake, Calcuta</span><span>Mostrar en el mapa</span>
+                                    </a>
+                                    <span style="font-size: 12px;">3.3 km from center</span>
+                                  </div>
+                                </div>
+                                <div>
+                                  <a href="#">
+                                    <span>
+                                      <div class="rate-box">
+                                        <div class="rate">1.0</div>
+                                        <div class="text-right">
+                                          <div class="r-score">Review score<!-- --> </div>
+                                          <div class="review">3 reviews</div>
+                                        </div>
+                                      </div>
+                                    </span>
+                                  </a>
+                                </div>
+                              </div><!--//property-content-header-->
+                              <div class="property-card-dealbox">
+                                <span class="property-deal">
+                                  Recomendado para tu familia
+                                </span>
+                              </div><!--//property-card-dealbox-->
+                              <div class="property-content-body">
+                                <div class="p-content-column">
+                                  <div class="recommended-units">
+                                    <div>
+                                      <div><span class="f-12 fw-700">Superior Queen Room with 10% discount on Food and Beverages</span></div>
+                                      <div><span class="f-12 fw-400">2 win beds</span></div>
+                                      <div><span class="text-success f-12 fw-400">Breakfast included</span></div>
+                                      <div><span class="text-success f-12 fw-700">FREE cancellation  -  No prepayment needed</span></div>
+                                      <div><span class="text-success f-12 fw-400">You can cancel later, so lock in this great price today!</span></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="p-content-column">
+                                  <div><span class="f-12">1 night, 2 adults</span></div>
+                                  <div><span style="font-size: 20px;" class="fw-700">₹ 5,500</span></div>
+                                  <div><span class="f-12">+₹ 660 taxes and charges</span></div>
+                                  <div>
+                                    <a href="#" class="btn btn-primary avail-btn btn-block">See Availability <span class="fa fa-angle-right f-12"></span></a>
+                                  </div>
+                                </div>
+                              </div><!--//property-content-body-->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section><!--hotel-det-slidewrapper-->
+
+                  <section class="py-4">
+                      <div class="payment-step-form-wrapper">
+                          <h4 class="page-head4ing">Enter Your Details</h4>
+                          <div class="payment-step-formbox">
+                            <div class="pay-stepbox-top">
+                              <p><span class="pay-success-badge badge-r-desk">Almost done! just fill in the <span class="text-danger">*</span> required info</span></p>
+                            </div>
+                            <form role="form" class="">
+                                <div class="row">
+                                  <div class="form-group">
+                                    <div class="col-sm-2">
+                                      <label for="title">Title</label>
+                                      <select class="form-control" id="sel1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-sm-4">
+                                      <label for="firstname">First name</label>
+                                      <input type="text" class="form-control" id="firstName" placeholder="">
+                                    </div>
+                                    <div class="col-sm-4">
+                                      <label for="lastname">Last name<span class="text-danger ml-2">*</span></label>
+                                      <input type="text" class="form-control" id="lastName" placeholder="">
+                                    </div>
+                                  </div><!--form-group-->
+                                </div><!--row-->
+
+                                <div class="row">
+                                  <div class="form-group">
+                                    <div class="col-sm-5">
+                                      <label for="email">Email Address<span class="text-danger ml-2">*</span></label>
+                                      <input type="email" class="form-control" id="email" placeholder="watch out for typos">
+                                    </div>
+                                    <div class="col-sm-5">
+                                      <p class="confirmmsg"><i>Confirmation email goes to this address</i></p>
+                                    </div>
+                                  </div><!--form-group-->
+                                </div><!--row-->
+
+                                <div class="row">
+                                  <div class="form-group">
+                                    <div class="col-sm-5">
+                                      <label for="confirmemail">Confirm Email Address<span class="text-danger ml-2">*</span></label>
+                                      <input type="email" class="form-control" id="confirmEmail" placeholder="">
+                                    </div>
+                                  </div><!--form-group-->
+                                </div><!--row-->
+
+                                <div class="row">
+                                  <div class="form-group">
+                                    <div class="col-sm-5">
+                                      <label for="confirmemail">Who are you booking for?</label>
+                                      <div class="radio">
+                                        <label><input type="radio" name="optradio" checked>I am the main guest</label>
+                                      </div>
+                                      <div class="radio">
+                                        <label><input type="radio" name="optradio">Booking is for someone else</label>
+                                      </div>
+                                    </div>
+                                  </div><!--form-group-->
+                                </div><!--row-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="paybase-block">
+                                          <h4>Basement Studio - No view</h4>
+                                          <p><b>Non refundable</b> <span><i class="fa fa-question-circle text-primary"></i></span></p>
+                                          <div class="my-3">
+                                            <span class="pay-success-badge"><span class="mr-1"><i class="fa fa-check"></i></span>Private Bathroom</span>
+                                            <span class="pay-success-badge"><span class="mr-1"><i class="fa fa-check"></i></span>Full-screen TV</span>
+                                            <span class="pay-success-badge"><span class="mr-1"><i class="fa fa-check"></i></span>Soundproofing</span>
+                                          </div>
+                                          <div class="clean-review">
+                                              <span class="cl-rev-point">8.5</span>
+                                              <span>
+                                                <span class="text-primary"><b>Cleanliness</b></span><i class="fa fa-check text-success"></i><br>306 reviews
+                                              </span>
+                                          </div><!--clean-review-->
+                                          <div class="form-group py-4">
+                                              <div class="g-inline">
+                                                <label for="">Guests:</label>
+                                                <select class="form-control" id="sel2">
+                                                  <option>1</option>
+                                                  <option>2</option>
+                                                  <option>3</option>
+                                                  <option>4</option>
+                                                </select>
+                                                <span class="ml-3"><i class="fas fa-smoking-ban text-primary"></i></span>
+                                              </div>
+                                          </div><!--//form-group-->
+                                      </div><!--//paybase-block-->
+                                    </div>
+                                </div><!--row-->
+                            </form>
+                          </div><!--//payment-step-formbox-->
+                      </div><!--//payment-step-form-wrapper-->
+
+                      <div class="payment-step-form-wrapper">
+                          <h4 class="page-head4ing">Ask a question</h4>
+                          <div class="payment-step-formbox">
+                            <h5><b>Say hello to your host or send a request!</b></h5>
+                            <p class="text-muted"><i>Please write your requests in english - we will share it with ther property.<br>
+                              Special requests cannot be guaranteed-but the accomodation will do best to meet your needs.<br>
+                              You can always make a special request after your booking is complete!</i></p>
+                            <form role="form" class="">
+                                <div class="row">
+                                  <div class="form-group">
+                                    <div class="col-sm-5">
+                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <p><span class="mr-2"><i class="fa fa-check text-success"></i></span>Introduce yourself to your host</p>
+                                        <p><span class="mr-2"><i class="fa fa-check text-success"></i></span>What brings you to the area?</p>
+                                        <p><span class="mr-2"><i class="fa fa-check text-success"></i></span>Who are you travelling with?</p>
+                                    </div>
+
+                                  </div><!--form-group-->
+                                </div><!--row-->
+
+                                <div class="row">
+                                  <div class="form-group">
+                                    <div class="col-md-12">
+                                      <h5><b>Your estimated time of arrival</b></h5>
+                                    </div>
+                                  </div><!--form-group-->
+                                  <div class="form-group">
+                                    <div class="col-md-12">
+                                      <p><b>Check-in time:</b> Your room will be ready for check in from <b>15:00</b></p>
+                                    </div>
+                                  </div><!--form-group-->
+                                  <div class="form-group">
+                                    <div class="col-md-12">
+                                      <div class="g-inline">
+                                                <label for="">Arrival Time: Wednesday, 17April, 2019</label>
+                                                <select class="form-control" id="sel2">
+                                                  <option>I dont know</option>
+                                                  <option>2</option>
+                                                  <option>3</option>
+                                                  <option>4</option>
+                                                </select>
+                                                <span class="ml-3"><small>Time is for London time zone</small></span>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p><small>To ensure a warm welcome and a smooth check in, let your host expected time of arrival in advance. You can do that here or contact them directly using the details, provided in your confirmation.</small></p>
+                                    </div><!--col-md-12-->
+                                  </div><!--form-group-->
+                                </div><!--row-->
+
+
+                            </form>
+                          </div><!--//payment-step-formbox-->
+                      </div><!--//payment-step-form-wrapper-->
+
+                      <div class="payment-step-form-wrapper">
+                          <h4 class="page-head4ing">Review house rules</h4>
+                          <div class="payment-step-formbox">
+                            <h5>Your host would like you to agree to the following house rules:</h5>
+                            <ul>
+                              <li>• No smoking</li>
+                              <li>• Pets are not allowed</li>
+                            </ul>
+                            <h5><b>By continuing to the next step, you are agreeing to these hosue rules.</b></h5>
+                          </div><!--//payment-step-formbox-->
+                      </div><!--//payment-step-form-wrapper-->
+                  </section>
+
+                  <!-- payment submit section  start-->
+                  <section class="pb-4 text-right">
+                    <div class="form-group">
+                      <span class="rate-gurantee payrate-gurantee">
+                        <a href="#"><i class="bpg-logo"></i>We Price Match</a>
+                      </span>
+                      <button class="btn btn-primary payment-step-btn" type="submit">Next: Final Details <span><i class="fa fa-chevron-right"></i><span></button>
+                    </div><!--form-group-->
+                    <div class="form-group">
+                      <p><b><a href="#">What are my booking conditions?</a></b></p>
+                    </div><!--form-group-->
+                  </section>
+                  <!-- payment submit section end-->
+
+                </div><!--col-md-9-->
+            </div>
+        </div><!--container-->
+    </section>
+    <!-- payment step content section <  <div class="container">
+
+    </div>    e></e>nd -->
+
+    <!--gray footer section end-->
+    <section class="grayfooter-section">
+        <div class="container">
+            <div class="">
+              <ul class="grayfooter-ul">
+                <li><a href="#">About Booking.com</a> <span class="text-muted">|</span></li>
+                <li><a href="#">customer service</a> <span class="text-muted">|</span></li>
+                <li><a href="#">Terms & Conditions</a> <span class="text-muted">|</span></li>
+                <li><a href="#">Privacy & Cookie Statement</a> </li>
+              </ul>
+            </div>
+            <p class="copy-right"><small>Copyright © 1996–2019 Booking.com™. All rights reserved.</small></p>
+        </div>
+    </section>
+    <!--//gray footer section end-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--t-datepicker-->
+    <script src="js/t-datepicker.min.js"></script>
+    <script src="js/rSlider.min.js"></script>
+    <script src="js/pgwslider.js"></script>
+    <script>
+    <!--datepicker-->
+     $(document).ready(function(){
+        // Call global the function
+        $('.t-datepicker').tDatePicker({
+          // options here
+        });
+
+      });
+
+      $(document).ready(function() {
+          $('.pgwSlider').pgwSlider();
+      });
+    </script>
+    <script>
+    // var i = 1;
+    //   $('.progress .circle').removeClass().addClass('circle');
+    //   $('.progress .bar').removeClass().addClass('bar');
+    //   setInterval(function() {
+    //   $('.progress .circle:nth-of-type(' + i + ')').addClass('active');
+    //
+    //   $('.progress .circle:nth-of-type(' + (i-1) + ')').removeClass('active').addClass('done');
+    //
+    //   $('.progress .circle:nth-of-type(' + (i-1) + ') .label').html('&#10003;');
+    //
+    //   $('.progress .bar:nth-of-type(' + (i-1) + ')').addClass('active');
+    //
+    //   $('.progress .bar:nth-of-type(' + (i-2) + ')').removeClass('active').addClass('done');
+    //
+    //   i++;
+    //
+    //   if (i==0) {
+    //     $('.progress .bar').removeClass().addClass('bar');
+    //     $('.progress div.circle').removeClass().addClass('circle');
+    //     i = 1;
+    //   }
+    //   }, 1000);
+    ($('.progress .done').find('.label').html());
+    $('.progress .done').find('.label').html('&#10003;');
+    </script>
+
+  </body>
+</html>

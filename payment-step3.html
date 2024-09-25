@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/flag-icon.min.css" rel="stylesheet">
+    <!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="css/t-datepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="css/t-datepicker-blue.css" rel="stylesheet" type="text/css">
+    <link href="css/rSlider.min.css" rel="stylesheet" type="text/css">
+    <link href="css/pgwslider.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-formhelpers.css" rel="stylesheet" type="text/css">
+    <link href="css/intlInputPhone.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/position-style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default topnav" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <!--/.navbar-header-->
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#" class="top-head-currency">&#8377;</a></li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="flag-icon flag-icon-in flag-icon-squared"></span></a>
+                      <ul class="dropdown-menu multi-column columns-3">
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <ul class="multi-column-dropdown">
+                              <li><a href="#"><span class="flag-icon flag-icon-in flag-icon-squared mr-2"></span>English(US)</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-in flag-icon-squared mr-2"></span>English(UK)</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-fr flag-icon-squared mr-2"></span>Français</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-4">
+                            <ul class="multi-column-dropdown">
+                              <li><a href="#"><span class="flag-icon flag-icon-fr flag-icon-squared mr-2"></span>Français</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-cn flag-icon-squared mr-2"></span>简体中文</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-4">
+                            <ul class="multi-column-dropdown">
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                            </ul>
+                          </div>
+                        </div><!--row-->
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h4 class="all-ltext">All Language</h4>
+                          </div><!--col-sm-12-->
+
+                          <div class="col-sm-4">
+                            <ul class="multi-column-dropdown">
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                            </ul>
+                          </div><!--col-sm-4-->
+                          <div class="col-sm-4">
+                            <ul class="multi-column-dropdown">
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                            </ul>
+                          </div><!--col-sm-4-->
+                          <div class="col-sm-4">
+                            <ul class="multi-column-dropdown">
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                            </ul>
+                          </div><!--col-sm-4-->
+                        </div><!--row-->
+                      </ul>
+                  </li>
+                  <li><a href="#">Link</a></li>
+                  <li><a class="btn list-property-btn" href="#" role="button">List Your Property</a></li>
+                  <li><a class="btn btn-default log-regbtn" href="#" role="button">Register</a></li>
+                  <li><a class="btn btn-default log-regbtn" href="#" role="button">Sign In</a></li>
+                </ul>
+            </div>
+            <!--/.navbar-collapse-->
+        </div><!--container-->
+      </nav>
+      <!--/.navbar-->
+
+    </header>
+    <!--/header-->
+
+    <!--/payment-step section-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                      <!-- <div class="progress">
+                        <div class="circle done">
+                          <span class="label">1</span>
+                          <span class="title">Your Apartments</span>
+                        </div>
+                        <span class="bar"></span>
+                        <div class="circle done">
+                          <span class="label">2</span>
+                          <span class="title">Enter your details</span>
+                        </div>
+                        <span class="bar"></span>
+                        <div class="circle active">
+                          <span class="label">3</span>
+                          <span class="title">Final Details</span>
+                        </div>
+                      </div>--><!--proggress end-->
+                      <br>
+                      <ul class="list-unstyled multi-steps">
+                        <li>Start</li>
+                        <li>First Step</li>
+                        <li class="is-active">Middle Stage</li>
+                      </ul>
+                </div><!--col-md-12-->
+            </div><!--/row-->
+        </div><!--/.container-->
+    </section>
+    <!--/end payment-section section-->
+
+    <!-- payment step content section -->
+    <section class="pay-step-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="payment-left-wrapper">
+                      <div class="panel panel-info booking-panel">
+                        <div class="panel-heading">Your Booking Details</div>
+                        <div class="panel-body">
+                          <div class="panel-list">
+                              <label>Check-in:</label>
+                              <p><b>Wednesday, 17 April, 2019</b><span> from 15:00</span></p>
+                          </div><!--panel-list-->
+                          <div class="panel-list">
+                              <label>Check-out:</label>
+                              <p><b>Saterday, 20 April, 2019</b><span> until 10:00</span></p>
+                          </div><!--panel-list-->
+                          <div class="panel-list">
+                              <label>Total lenth of stay:</label>
+                              <p><span> 3 nights</span></p>
+                              <a href="#">Travelling on different dates</a>
+                          </div><!--panel-list-->
+                          <p class="panel-divider"></p>
+                          <div class="panel-list">
+                              <label>You Selected:</label>
+                              <p><span> 2 x Basement Studio - No view</span></p>
+                              <a href="#">Change your selection</a>
+                          </div><!--panel-list-->
+                        </div><!--//panel-body-->
+                      </div><!--//panel-->
+                      <div class="panel panel-info booking-panel">
+                        <div class="panel-heading">Your Booking includes</div>
+                        <div class="panel-body">
+                          <div class="roomtype-block panel-roomtype">
+                              <ul>
+                                <li><span>Free Wifi</span></li>
+                                <li><span>Discount at London Attractions</span></li>
+                              </ul>
+                          </div>
+                        </div><!--//panel-body-->
+                      </div><!--//panel-->
+
+                      <div class="panel panel-info booking-panel">
+                        <div class="panel-heading">Your Price summary</div>
+                        <div class="panel-body">
+                          <ul class="p-summary-ul">
+                                <li>
+                                  <span class="sumleftspan">2 apartments</span>
+                                  <span class="sumrightspan">€ 632</span>
+                                </li>
+                                <li>
+                                  <span class="sumleftspan">20% VAT</span>
+                                  <span class="sumrightspan">€ 126</span>
+                                </li>
+                          </ul>
+                        </div><!--//panel-body-->
+                        <div class="infopanel-bg">
+                          <ul class="price-ul">
+                              <li>
+                                <div class="pull-left">
+                                    <span class="span-big">Price</span>
+                                    <span class="span-small"><small>(Your Currency)</small></span>
+                                </div>
+                                <div class="pull-right">
+                                  <span class="span-big">€ 758</span>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="pull-left">
+                                    <span class="span-small">Property Currency</span>
+                                    <span class="span-small">In GBP</span>
+                                </div>
+                                <div class="pull-right">
+                                  <span class="span-small"><span class="text-linethrough text-decoration-danger">€ 1,204.50 </span><i class="fa fa-question-circle text-warning"></i> € 651</span>
+                                </div>
+                              </li>
+
+                          </ul>
+                        </div><!--infopanel-bg-->
+                        <div class="panel-body">
+                          <div class="panel-list">
+                                <p><small>* This price is converted to show you the approximate cost in €. You'll pay in £. The exchange rate may change before you pay.</small></p>
+                                <p><small>Bear in mind that your card issuer may change you a foreign transaction fee.</small></p>
+                          </div><!--//panel-list-->
+                        </div><!--panel-body-->
+                      </div><!--//panel-->
+
+                      <div class="panel panel-info booking-panel">
+                        <div class="panel-heading">Sign in for Genius prices<span class="pull-right"><img src="images/genius-icon.png" alt></span></div>
+                        <div class="panel-body">
+                          <div class="media">
+                            <div class="media-left">
+                              <div class="gprice-img">
+                                <img src="images/price-icon.jpg" class="media-object" style="width:80px">
+                              </div>
+                            </div>
+                            <div class="media-body">
+                              <p><small>Genius users can save at least 10% on select accomodation. Sign in to see if you're eligible </small><a href="#" class="text-underline">Sign in</a></p>
+                            </div>
+                          </div><!--media-->
+                        </div><!--//panel-body-->
+                      </div><!--//panel-->
+
+                      <div class="panel panel-info booking-panel">
+                        <div class="panel-heading">How much will it cost to cancel?</div>
+                        <div class="panel-body">
+                          <ul class="p-summary-ul">
+                                <li>
+                                  <span class="sumleftspan"><b>If you cancel, you'll pay</b></span>
+                                  <span class="sumrightspan">€ 758</span>
+                                </li>
+                          </ul>
+                        </div><!--//panel-body-->
+                      </div><!--//panel-->
+                      <div class="alert alert-danger limited-alert clearfix">
+                                <div class="limit-ico">
+                                      <span class="fa fa-clock-o"></span>
+                                </div><!-- book-ico -->
+                                <span class="limit-msg"><strong>Limited supply in London: 3star hotels</strong> Prices may go up. So secure your reservation Today.</span>
+                      </div><!--alert-->
+                      <div class="panel panel-info booking-panel">
+                        <div class="panel-heading">Location Highlights</div>
+                        <div class="panel-body">
+                          <div class="">
+                              <ul class="panel-loc-ul">
+                                <li>
+                                  <span>
+                                    <i class="fa fa-subway"></i>
+                                  </span>
+                                  <div class="loc-right">
+                                    <b>Public tranportation nearby</b><br><span>Holloway road (800m)</span>
+                                  </div>
+                                </li>
+                                <li>
+                                  <span>
+                                    <i class="fa fa-home"></i>
+                                  </span>
+                                  <div class="loc-right">
+                                    <b>Landmark in the area</b><br><span>Holloway road (800m)</span>
+                                  </div>
+                                </li>
+                              </ul>
+                          </div>
+                        </div><!--//panel-body-->
+                      </div><!--//panel-->
+                    </div><!--payment-left-wrapper-->
+                </div><!--col-md-3-->
+                <div class="col-md-9">
+                  <section class="hotel-det-slidewrapper px-4">
+                    <div class="row mb-4">
+                      <div class="col-md-4">
+
+                            <ul class="pgwSlider">
+                              <li><img src="images/hotel-gallery/gallery1.jpg" alt="Paris, France" data-description="Eiffel Tower and Champ de Mars"></li>
+                              <li><img src="images/hotel-gallery/gallery2.jpg" alt="Montréal, QC, Canada" data-large-src="images/hotel-gallery/gallery2.jpg"></li>
+                              <li><img src="images/hotel-gallery/gallery3.jpg" alt="Montréal, QC, Canada" data-large-src="images/hotel-gallery/gallery3.jpg"></li>
+                              <li><img src="images/hotel-gallery/gallery1.jpg" alt="Montréal, QC, Canada" data-large-src="images/hotel-gallery/gallery1.jpg"></li>
+
+                            </ul>
+
+                      </div><!--col-md-4-->
+                      <div class="col-md-8">
+                        <h3 class="hotel-det-name">Native Camden
+                            <p><span class="star-span text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                            <span class="thumbsup-span text-warning"><i class="fa fa-thumbs-up"></i></span><button class="btn btn-primary gr-value-btn" type="submit">Great Value Today</button></p>
+                        </h3>
+                        <p class="text-muted"><span class="hot-det-loc-ico"><img src="images/location-icon.jpg" alt></span>376-380 Camden Road, Islington, London, N7 0LG, United Kingdom</p>
+                        <p><b class="text-success">This property is in a good location. Guests have rated it 8.2!</b></p>
+                      </div><!--col-md-8-->
+                    </div><!--row-->
+                  </section><!--hotel-det-slidewrapper-->
+
+                  <section class="py-4">
+                      <div class="payment-step-form-wrapper">
+                          <h4 class="page-head4ing">Enter Your Details</h4>
+                          <div class="payment-step-formbox">
+                            <div class="pay-stepbox-top">
+                              <p><span class="pay-success-badge badge-r-desk">Almost done! just fill in the <span class="text-danger">*</span> required info</span></p>
+                            </div>
+                            <form role="form" class="">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label for="address">Address<span class="text-danger ml-2">*</span></label>
+                                            <input type="text" class="form-control" id="address" placeholder="">
+                                        </div><!--form-group-->
+                                        <div class="form-group">
+                                            <label for="address">City <span class="text-danger ml-2">*</span></label>
+                                            <input type="text" class="form-control" id="city" placeholder="">
+                                        </div><!--form-group-->
+                                        <div class="form-group">
+                                            <div class="row">
+                                              <div class="col-sm-6">
+                                                <label for="address">Zip/Post code</label>
+                                                <input type="text" class="form-control" id="city" placeholder="">
+                                              </div>
+                                            </div>
+                                        </div><!--form-group-->
+                                        <div class="form-group">
+                                            <label for="address">Country/Region <span class="text-danger ml-2">*</span></label>
+                                            <div class="bfh-selectbox bfh-countries" data-country="US" data-flags="true">
+				</div>
+                                        </div><!--form-group-->
+                                        <div class="form-group">
+                                            <label for="address">Telephone (mobile umber preffered) <span class="text-danger ml-2">*</span></label>
+                                            <div class="input-phone"></div>
+
+                                        </div><!--form-group-->
+
+                                    </div>
+                                    <div class="col-md-4 col-md-offset-3">
+                                        <div class="form-group">
+                                            <div class="payment-namedit-block">
+                                                <div class="payment-namedit-blocklist">
+                                                    <label for="nam">Name</label>
+                                                    <p>Dean Martin</p>
+                                                </div>
+                                                <div class="payment-namedit-blocklist">
+                                                  <label for="mail">Email</label>
+                                                  <p>deanmartin@gmail.com</p>
+                                                </div>
+                                                <div class="payment-namedit">
+                                                    <p><a href="#">Change</a><span class="ml-2"><i class="far fa-user"></i></span></p>
+                                                </div><!--payment-namedit-->
+                                            </div><!--payment-namedit-block-->
+                                        </div><!--form-group-->
+                                    </div>
+                                </div><!--row-->
+                            </form>
+                          </div><!--//payment-step-formbox-->
+                      </div><!--//payment-step-form-wrapper-->
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="alert alert-success clearfix">
+                                    <span class="fa fa-check-circle text-success mr-4"></span>
+
+                                    <span class="limit-msg">Congratulation you have choosen<strong>Cheapest Apartment</strong> at Native camden. <b>Dont miss out Book now.</b></span>
+                          </div><!--alert-->
+                        </div>
+                      </div>
+                      <div class="payment-step-form-wrapper">
+                          <h4 class="page-head4ing">How would you like to pay?</h4>
+                          <div class="payment-step-formbox">
+                            <div class="form-group">
+                              <label class="radio payradio">I want the property to charge me
+                                <input type="radio" checked="checked" name="is_company">
+                                <span class="checkround"></span>
+                                <span class="fl-r">
+                                  <img src="images/payment-method.png" alt="">
+                                </span>
+                              </label>
+                                <label class="radio payradio">I want the property to charge me
+                                <input type="radio" name="is_company">
+                                <span class="checkround"></span>
+                                <span class="fl-r">
+                                  <img src="images/payment-method.png" alt="">
+                                </span>
+                              </label>
+                            </div><!--form-group-->
+                          </div><!--//payment-step-formbox-->
+                      </div><!--//payment-step-form-wrapper-->
+                  </section>
+
+                  <!-- payment submit section  start-->
+                  <section class="pb-4 text-right">
+                    <div class="form-group">
+                      <button class="btn btn-primary payment-step-checkbtn" type="submit">Check your booking</button>
+                      <button class="btn btn-primary payment-step-btn" type="submit"><span><i class="fa fa-lock"></i><span> Complete Booking </button>
+                    </div><!--form-group-->
+                    <div class="form-group">
+                      <p><b><a href="#">What are my booking conditions?</a></b></p>
+                    </div><!--form-group-->
+                  </section>
+                  <!-- payment submit section end-->
+
+                </div><!--col-md-9-->
+            </div>
+        </div><!--container-->
+    </section>
+    <!-- payment step content section <  <div class="container">
+
+    </div>    e></e>nd -->
+
+    <!--gray footer section end-->
+    <section class="grayfooter-section">
+        <div class="container">
+            <div class="">
+              <ul class="grayfooter-ul">
+                <li><a href="#">About Booking.com</a> <span class="text-muted">|</span></li>
+                <li><a href="#">customer service</a> <span class="text-muted">|</span></li>
+                <li><a href="#">Terms & Conditions</a> <span class="text-muted">|</span></li>
+                <li><a href="#">Privacy & Cookie Statement</a> </li>
+              </ul>
+            </div>
+            <p class="copy-right"><small>Copyright © 1996–2019 Booking.com™. All rights reserved.</small></p>
+        </div>
+    </section>
+    <!--//gray footer section end-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--t-datepicker-->
+    <script src="js/t-datepicker.min.js"></script>
+    <script src="js/rSlider.min.js"></script>
+    <script src="js/pgwslider.js"></script>
+    <script src="js/bootstrap-formhelpers.js"></script>
+    <script src="js/intlInputPhone.min.js"></script>
+    <script>
+    <!--datepicker-->
+     $(document).ready(function(){
+        // Call global the function
+        $('.t-datepicker').tDatePicker({
+          // options here
+        });
+
+      });
+
+      $(document).ready(function() {
+          $('.pgwSlider').pgwSlider();
+      });
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.input-phone').intlInputPhone();
+        })
+    </script>
+    <script>
+    // var i = 1;
+    //   $('.progress .circle').removeClass().addClass('circle');
+    //   $('.progress .bar').removeClass().addClass('bar');
+    //   setInterval(function() {
+    //   $('.progress .circle:nth-of-type(' + i + ')').addClass('active');
+    //
+    //   $('.progress .circle:nth-of-type(' + (i-1) + ')').removeClass('active').addClass('done');
+    //
+    //   $('.progress .circle:nth-of-type(' + (i-1) + ') .label').html('&#10003;');
+    //
+    //   $('.progress .bar:nth-of-type(' + (i-1) + ')').addClass('active');
+    //
+    //   $('.progress .bar:nth-of-type(' + (i-2) + ')').removeClass('active').addClass('done');
+    //
+    //   i++;
+    //
+    //   if (i==0) {
+    //     $('.progress .bar').removeClass().addClass('bar');
+    //     $('.progress div.circle').removeClass().addClass('circle');
+    //     i = 1;
+    //   }
+    //   }, 1000);
+    ($('.progress .done').find('.label').html());
+    $('.progress .done').find('.label').html('&#10003;');
+    </script>
+
+  </body>
+</html>

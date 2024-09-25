@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/flag-icon.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/t-datepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="css/t-datepicker-blue.css" rel="stylesheet" type="text/css">
+    <link href="css/rSlider.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/position-style.css" rel="stylesheet">
+     <link href="css/d7ef34b09db0943a7560b1a987f60e52137f214b.css" rel="stylesheet">
+    <style>
+	.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  opacity:1;
+}
+
+.tooltip .tooltiptext {
+  
+  width: 290px;
+  background-color: #fff0e0;
+  color: #ce0000;
+  text-align: left;
+  border-radius: 6px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: -60px;
+  left: calc(50% - 75px);
+  margin-left: 0px;
+  transition: opacity 0.3s;
+  box-sizing: border-box;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 26%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #fff0e0 transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+	</style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default topnav" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <!--/.navbar-header-->
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#" class="top-head-currency">&#8377;</a></li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="flag-icon flag-icon-in flag-icon-squared"></span></a>
+                      <ul class="dropdown-menu multi-column columns-3">
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <ul class="multi-column-dropdown">
+                              <li><a href="#"><span class="flag-icon flag-icon-in flag-icon-squared mr-2"></span>English(US)</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-in flag-icon-squared mr-2"></span>English(UK)</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-fr flag-icon-squared mr-2"></span>Français</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-4">
+                            <ul class="multi-column-dropdown">
+                              <li><a href="#"><span class="flag-icon flag-icon-fr flag-icon-squared mr-2"></span>Français</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-cn flag-icon-squared mr-2"></span>简体中文</a></li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-4">
+                            <ul class="multi-column-dropdown">
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                            </ul>
+                          </div>
+                        </div><!--row-->
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h4 class="all-ltext">All Language</h4>
+                          </div><!--col-sm-12-->
+
+                          <div class="col-sm-4">
+                            <ul class="multi-column-dropdown">
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                            </ul>
+                          </div><!--col-sm-4-->
+                          <div class="col-sm-4">
+                            <ul class="multi-column-dropdown">
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                            </ul>
+                          </div><!--col-sm-4-->
+                          <div class="col-sm-4">
+                            <ul class="multi-column-dropdown">
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-de flag-icon-squared mr-2"></span>Deutsch</a></li>
+                              <li><a href="#"><span class="flag-icon flag-icon-jp flag-icon-squared mr-2"></span>日本語</a></li>
+                            </ul>
+                          </div><!--col-sm-4-->
+                        </div><!--row-->
+                      </ul>
+                  </li>
+                  <li><a href="#">Link</a></li>
+                  <li><a class="btn list-property-btn" href="#" role="button">List Your Property</a></li>
+                  <li><a class="btn btn-default log-regbtn" href="#" role="button">Register</a></li>
+                  <li><a class="btn btn-default log-regbtn" href="#" role="button">Sign In</a></li>
+                </ul>
+            </div>
+            <!--/.navbar-collapse-->
+        </div><!--container-->
+      </nav>
+      <!--/.navbar-->
+
+      <!--topbar btn section-->
+      <section class="cross-product-bar">
+        <div class="container">
+          <div class="product-bar-btn-wrapper">
+              <button type="button" class="btn btn-link selected">Accomodation</button>
+              <button type="button" class="btn btn-link">Flights</button>
+              <button type="button" class="btn btn-link">Car Rentals</button>
+              <button type="button" class="btn btn-link">Airport Taxis</button>
+          </div><!--product-bar-btn-wrapper-->
+        </div><!--container-->
+      </section>
+      <!--topbar btn section end-->
+    </header>
+    <!--/header-->
+
+    <!--/breadcrumb section-->
+    <section>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <ol class="breadcrumb bui-breadcrumb">
+                    <li class="breadcrumb-item"><a class="black-text" href="#">Home</a><i class="fa fa-angle-right mx-2" aria-hidden="true"></i></li>
+                    <li class="breadcrumb-item"><a class="black-text" href="#">Romania</a><i class="fa fa-angle-right mx-2" aria-hidden="true"></i></li>
+                    <li class="breadcrumb-item"><a class="black-text" href="#">Muntenia</a><i class="fa fa-angle-right mx-2" aria-hidden="true"></i></li>
+                    <li class="breadcrumb-item"><a class="black-text" href="#">Bucharest</a><i class="fa fa-angle-right mx-2" aria-hidden="true"></i></li>
+                    <li class="breadcrumb-item"><a class="black-text" href="#">Holiday rentals</a><i class="fa fa-angle-right mx-2" aria-hidden="true"></i></li>
+                    <li class="breadcrumb-item"><a class="black-text" href="#">Apartments</a><i class="fa fa-angle-right mx-2" aria-hidden="true"></i></li>
+                    <li class="breadcrumb-item"><a class="black-text" href="#">Sector 1</a><i class="fa fa-angle-right mx-2" aria-hidden="true"></i></li>
+                    <li class="breadcrumb-item active">Semalina Apartment (Apartment), Bucharest (Romania) deals</li>
+                </ol>
+              </div><!--/col-md-12-->
+            </div><!--/row-->
+        </div><!--/.container-->
+    </section>
+    <!--/end breadcrumb section-->
+
+    <!--/main content section start-->
+    <section>
+        <div class="container">
+              <div class="row">
+                  <div class="col-md-3">
+                      <div class="hp-lists">
+                          <button type="button" class="btn btn-primary b-btn">Reserve</button>
+                      </div><!--/.hp-lists-->
+                      <div class="price-holder">
+                          <div class="rate-gurantee">
+                              <a href="#"><i class="bpg-logo"></i>We Price Match</a>
+                          </div>
+                          <!-- /rate-gurantee -->
+                      </div>
+                      <!-- /price-holder" -->
+
+                      <!--checkinout Search form start -->
+                      <div class="checksearch-wrapper">
+                        <h3>Search</h3>
+                        <form>
+                          <div class="form-group">
+                            <label for="destination">Destination/ Property Name</label>
+                            <input type="text" class="form-control" id="exampleInputdestination" placeholder="Bucharest">
+                          </div>
+                          <div class="form-group">
+                            <div class="t-datepicker">
+                                <div class="t-check-in">
+
+                                </div>
+                                <div class="t-check-out mb-3">
+
+                                </div>
+                            </div><!--//t-datepicker-->
+                          </div><!--form-group-->
+                          <div class="form-group">
+                            <label for="">Two night stay</label>
+                            <select class="form-control">
+                              <option>2adults</option>
+                              <option>3adults</option>
+                              <option>4adults</option>
+                              <option>5adults</option>
+                              <option>6adults</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <div class="row">
+                              <div class="col-md-6 col-xs-6">
+                                <select class="form-control">
+                                  <option>No Children</option>
+                                  <option>1 child</option>
+                                  <option>2 children</option>
+                                  <option>3 children</option>
+                                  <option>4 children</option>
+                                  <option>5 child</option>
+                                  <option>7 children</option>
+                                  <option>8 children</option>
+                                  <option>9 children</option>
+                                </select>
+                              </div>
+                              <div class="col-md-6 col-xs-6">
+                                <select class="form-control">
+                                  <option>2adults</option>
+                                  <option>3adults</option>
+                                  <option>4adults</option>
+                                  <option>5adults</option>
+                                  <option>6adults</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- form-group -->
+
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> I am travelling for work.<span><i class="fa fa-question-circle"></i></span>
+                            </label>
+                          </div>
+                          <button type="submit" class="btn btn-default pull-right sb-searchbox-button">Submit</button>
+                        </form>
+                        <div class="clearfix">
+
+                        </div>
+                        <!-- clearfix -->
+                      </div>
+                      <!--end checkinout Search form-->
+
+                      <div class="fe-banner">
+                          <span class="fe-banner-icon">
+                            <svg aria-hidden="true" class="bk-icon -experiments-eye-with-lashes hp-ufi-people-looking__icon" fill="#537BB4" height="24" width="24" viewBox="0 0 24 24"><path class="lashes" fill-rule="evenodd" d="M22 3.3c.5.2.6.9.4 1.3l-1 1.8a1 1 0 0 1-1.8-1l1-1.8a1 1 0 0 1 1.4-.3zM12 0c.6 0 1 .4 1 1v2a1 1 0 0 1-2 0V1c0-.6.4-1 1-1zM2 3.3a1 1 0 0 1 1.4.3l1 1.8a1 1 0 1 1-1.8 1l-1-1.8A1 1 0 0 1 2 3.3z"></path><path class="eye" fill-rule="evenodd" d="M.5 12.4c-.7.6-.7 1.6 0 2.2 0 0 6.2 6.4 11.5 6.4s11.5-6.4 11.5-6.4c.7-.6.7-1.6 0-2.2 0 0-6.2-6.4-11.5-6.4S.5 12.4.5 12.4zm16 1.1a4.5 4.5 0 1 0-9 0 4.5 4.5 0 0 0 9 0zm-7.4-.7a3 3 0 1 0 2.2-2.2A1.8 1.8 0 1 1 9 12.8z"></path></svg>
+                          </span>
+                          <p><small>245 people are currently looking for a place in Bucharest</small></p>
+                      </div><!--/fe-banner-->
+
+                      <div class="form-group">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 150px;" allowfullscreen></iframe>
+                      </div>
+
+                      <div class="social-proof-review">
+                          <h3>What guests loved the most:</h3>
+                          <div class="social-review-snippet">
+                              <div class="c-review-inner">
+                                  <div class="c-review-body">
+                                      <p>“the reception is extraordinary,
+                                    The host is sincerely hospitable and friendly.
+                                    the situation is central and allows easy access to the historical part of the Town , restaurants, cafés and main museums,
+                                    Just walking .”</p>
+                                  </div><!--//.c-review-body-->
+                                  <div class="c-review-guest">
+                                      <div class="review-guest-name">
+                                          <img src="images/guests/guest-1.png" alt="" class="review-guest-image">
+                                      </div><!--//.guest-name-->
+                                      <div class="review-guest-namedetails">
+                                          <p>
+                                            <span class="g-name">Jean</span>
+                                          </p>
+                                          <p>
+                                            <span class="flag-icon flag-icon-in flag-icon-squared"></span>
+                                            India
+                                          </p>
+                                      </div>
+                                  </div><!--//.c-review-guest-->
+                              </div><!--//.c-review-inner-->
+                          </div><!--//.social-review-snippet-->
+                          <hr>
+                          <div class="social-review-snippet">
+                              <div class="c-review-inner">
+                                  <div class="c-review-body">
+                                      <p>“the reception is extraordinary,
+                                    The host is sincerely hospitable and friendly.
+                                    the situation is central and allows easy access to the historical part of the Town , restaurants, cafés and main museums,
+                                    Just walking .”</p>
+                                  </div><!--//.c-review-body-->
+                                  <div class="c-review-guest">
+                                      <div class="review-guest-name">
+                                          <img src="images/guests/guest-2.png" alt="" class="review-guest-image">
+                                      </div><!--//.guest-name-->
+                                      <div class="review-guest-namedetails">
+                                          <p>
+                                            <span class="g-name">Hannah</span>
+                                          </p>
+                                          <p>
+                                            <span class="flag-icon flag-icon-gb flag-icon-squared"></span>
+                                            India
+                                          </p>
+                                      </div>
+                                  </div><!--//.c-review-guest-->
+                              </div><!--//.c-review-inner-->
+                          </div><!--//.social-review-snippet-->
+                          <hr>
+                          <div class="social-review-snippet">
+                              <div class="c-review-inner">
+                                  <div class="c-review-body">
+                                      <p>“the reception is extraordinary,
+                                    The host is sincerely hospitable and friendly.
+                                    the situation is central and allows easy access to the historical part of the Town , restaurants, cafés and main museums,
+                                    Just walking .”</p>
+                                  </div><!--//.c-review-body-->
+                                  <div class="c-review-guest">
+                                      <div class="review-guest-name">
+                                          <img src="images/guests/guest-3.png" alt="" class="review-guest-image">
+                                      </div><!--//.guest-name-->
+                                      <div class="review-guest-namedetails">
+                                          <p>
+                                            <span class="g-name">Alexander</span>
+                                          </p>
+                                          <p>
+                                            <span class="flag-icon flag-icon-gb flag-icon-squared"></span>
+                                            India
+                                          </p>
+                                      </div>
+                                  </div><!--//.c-review-guest-->
+                              </div><!--//.c-review-inner-->
+                          </div><!--//.social-review-snippet-->
+                          <hr>
+                          <div class="social-review-snippet">
+                              <div class="c-review-inner">
+                                  <div class="c-review-body">
+                                      <p>“the reception is extraordinary,
+                                    The host is sincerely hospitable and friendly.
+                                    the situation is central and allows easy access to the historical part of the Town , restaurants, cafés and main museums,
+                                    Just walking .”</p>
+                                  </div><!--//.c-review-body-->
+                                  <div class="c-review-guest">
+                                      <div class="review-guest-name">
+                                          <img src="images/guests/guest-4.png" alt="" class="review-guest-image">
+                                      </div><!--//.guest-name-->
+                                      <div class="review-guest-namedetails">
+                                          <p>
+                                            <span class="g-name">Jean</span>
+                                          </p>
+                                          <p>
+                                            <span class="flag-icon flag-icon-in flag-icon-squared"></span>
+                                            India
+                                          </p>
+                                      </div>
+                                  </div><!--//.c-review-guest-->
+                              </div><!--//.c-review-inner-->
+                          </div><!--//.social-review-snippet-->
+                          <hr>
+                          <div class="social-review-snippet">
+                              <div class="c-review-inner">
+                                  <div class="c-review-body">
+                                      <p>“the reception is extraordinary,
+                                    The host is sincerely hospitable and friendly.
+                                    the situation is central and allows easy access to the historical part of the Town , restaurants, cafés and main museums,
+                                    Just walking .”</p>
+                                  </div><!--//.c-review-body-->
+                                  <div class="c-review-guest">
+                                      <div class="review-guest-name">
+                                          <img src="images/guests/guest-5.png" alt="" class="review-guest-image">
+                                      </div><!--//.guest-name-->
+                                      <div class="review-guest-namedetails">
+                                          <p>
+                                            <span class="g-name">Jean</span>
+                                          </p>
+                                          <p>
+                                            <span class="flag-icon flag-icon-in flag-icon-squared"></span>
+                                            India
+                                          </p>
+                                      </div>
+                                  </div><!--//.c-review-guest-->
+                              </div><!--//.c-review-inner-->
+                          </div><!--//.social-review-snippet-->
+                      </div><!--//.social-proof-review-->
+
+                  </div><!--/.col-md-3-->
+                  <div class="col-md-9">
+                      <div class="row">
+                        <div class="col-md-12">
+                            <div class="tab-row">
+                              <ul class="tabs  booktab">
+                                  <li class="tabs__item">
+                                      <a href="#" class="tabs__link">Info & Prices</a>
+                                  </li>
+                                  <li class="tabs__item">
+                                      <a href="#" class="tabs__link">Facilities</a>
+                                  </li>
+                                  <li class="tabs__item">
+                                      <a href="#" class="tabs__link">House Rules</a>
+                                  </li>
+                                  <li class="tabs__item">
+                                      <a href="#" class="tabs__link">The fine print</a>
+                                  </li>
+                                  <li class="tabs__item">
+                                      <a href="#" class="tabs__link">Guest Reviews(1,768)</a>
+                                  </li>
+                              </ul>
+                            </div><!--/tab-row-->
+
+                            <div class="wrap-hotelpage-top">
+                                <div class="row">
+                                    <div class="wrap-hotelpage-top-left">
+                                        <h3 class="hp-hotel-name"><span class="hp-hotel-type-badge">Aparthotel</span>Staycity Aparthotels Deptford Bridge Station
+                                          <span class="star-span text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                                          <span class="thumbsup-span text-warning"><i class="fa fa-thumbs-up"></i></span>
+                                        </h3>
+                                        <div class="">
+                                          <button class="btn btn-primary gr-value-btn" type="submit">Great Value Today</button>
+                                        </div>
+                                    </div><!--wrap-hotelpage-top-left-->
+                                    <div class="wrap-hotelpage-top-right">
+                                        <div class="clearfix">
+                                          <button class="btn btn-primary r-btn" type="submit">Reserve</button>
+                                          <a class="btn btn-link" href="#" role="button"><span class="fa fa-heart-o"></span></a>
+                                        </div>
+                                        <div class="rate-gurantee pull-right">
+                                            <a href="#"><i class="bpg-logo"></i>We Price Match</a>
+                                        </div>
+                                    </div><!--wrap-hotelpage-top-right-->
+
+                                </div><!--end row-->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                      <p class="b-hotel-address"><span class="fa fa-map-marker text-primary pr-2"></span>18-29 Deptford Bridge, Lewisham, London, SEB 4HH, United Kingdom – <a href="#"><b>Great location - show map</b></a></p>
+                                    </div>
+                                </div><!--end row-->
+                            </div><!--/wrap-hotelpage-top-->
+
+                            <!-- hotel-gallery-wrapper -->
+                            <section class="hotel-gallery-wrapper">
+                                  <div class="row">
+                                      <div class="col-md-4 ">
+                                          <div class="gallery-left-block">
+                                              <img src="images/hotel-gallery/gallery1.jpg" alt="">
+                                          </div><!--gallery-left-block-->
+                                          <div class="gallery-left-block">
+                                              <img src="images/hotel-gallery/gallery2.jpg" alt="">
+                                          </div><!--gallery-left-block-->
+                                      </div>
+                                      <div class="col-md-8">
+                                        <div class="gallery-right-block">
+                                            <img src="images/hotel-gallery/gallery3.jpg" alt="">
+                                            
+                                            <!--gallery review wrapper start from here-->
+                                            <div class="gallery-review-wrapper">
+                                        		<div class="gallery-review-scorecard">
+                                                	<a href="#" class="gallery-review-scoredetails">
+                                                    	<div class="bui-review-score c-score bui-review-score--end"> 
+                                                            <div class="bui-review-score__badge"> 7.0 </div> 
+                                                            <div class="bui-review-score__content"> 
+                                                                <div class="bui-review-score__title"> Good </div> 
+                                                                <div class="bui-review-score__text"> 14,694 reviews </div> 
+                                                            </div> 
+                                                        </div><!--bui-review-score-->
+                                                    </a>
+                                                </div><!--//gallery review scorecard-->
+                                                <div class="reviews-carousel-container">
+                                                	
+                                                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                                      <!-- Wrapper for slides -->
+                                                      <div class="carousel-inner">
+                                                        <div class="item active">
+                                                          <div class="row">
+                                                           <p class="testimonial_para">
+Great location. The room was very nice and clean and the bed was comfortable.</p>
+                                                            <div class="row testi-name-whiterow">
+                                                            	<div class="testi-namewrap">
+                                                                    <span class="testiname-short">
+                                                                            <img src="images/c141da7c1b6c0b76b50d147f2ee2566e0ddb8d2d.png" class="img-responsive" alt="">
+                                                                    </span>
+                                                                    <p class="testiname">Ulrike</p>
+                                                                    <p class="testi_subtitle">
+                                                                    <span>
+                                                                    <span class="reviewer_country_flag sflag slang-gb"></span>
+                                                                    United Kingdom
+                                                                    </span>
+                                                                    </p>
+                                                                </div>
+                                                            </div><!--testi-name-whiterow-->
+                                                          </div>
+                                                        </div>
+                                                       <div class="item">
+                                                           <div class="row">
+                                                           	<p class="testimonial_para">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie.</p>
+                                                            <div class="row testi-name-whiterow">
+                                                            	<div class="testi-namewrap">
+                                                                    <span class="testiname-short">
+                                                                            <img src="images/c84a361d670170a23bc2e937798fc23520f61c43.png" class="img-responsive" alt="">
+                                                                    </span>
+                                                                    <p class="testiname">Kevin</p>
+                                                                    <p class="testi_subtitle">
+                                                                    <span>
+                                                                    <span class="reviewer_country_flag sflag slang-gb"></span>
+                                                                    	United Kingdom
+                                                                    </span>
+                                                                    </p>
+                                                                </div>
+                                                            </div><!--//testi-name-whiterow-->
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      <div class="controls testimonial_control pull-right">
+                                                        <a class="left fa fa-caret-left btn btn-default test-left-btn" href="#carousel-example-generic"
+                                                          data-slide="prev"></a>
+                                        
+                                                        <a class="right fa fa-caret-right btn btn-default test-right-btn" href="#carousel-example-generic"
+                                                          data-slide="next"></a>
+                                                      </div>
+                                                    </div><!--//#carousel-example-generic-->
+                                                    
+                                                    
+                                                </div><!--//reviews-carousel-container-->
+                                                <div class="best-review-score best-review-score-with_best_ugc_highlight" aria-hidden="true">
+                                                    <p class="best-review-score-label" data-review-topic="">
+                                                    Location
+                                                    </p>
+                                                    <div class="bui-review-score c-score"> 
+                                                        <div class="bui-review-score__badge"> 7.7 </div> 
+                                                    </div>  
+                                                </div><!--//best-review-score-->
+                                                
+                                        	</div><!--//gallery review wrapper-->
+                                            
+                                        </div><!--gallery-left-block-->
+                                        
+                                      </div><!--//col-md-8-->
+                                  </div>
+                                  <!-- row end -->
+                                  <div class="row">
+                                      <div class="gallery-thumbnail-wrap">
+                                          <div class="col-md-3">
+                                            <div class="gallery-thumb-col">
+                                              <img src="images/hotel-gallery/gal-thumb1.jpg" alt="">
+                                            </div>
+                                          </div><!--col-md-3-->
+                                          <div class="col-md-3">
+                                            <div class="gallery-thumb-col">
+                                              <img src="images/hotel-gallery/gal-thumb2.jpg" alt="">
+                                            </div>
+                                          </div><!--col-md-3-->
+                                          <div class="col-md-3">
+                                            <div class="gallery-thumb-col">
+                                              <img src="images/hotel-gallery/gal-thumb3.jpg" alt="">
+                                            </div>
+                                          </div><!--col-md-3-->
+                                          <div class="col-md-3">
+                                            <div class="gallery-thumb-col">
+                                              <img src="images/hotel-gallery/gal-thumb4.jpg" alt="">
+                                            </div>
+                                          </div><!--col-md-3-->
+                                      </div>
+                                  </div>
+                                  <!-- row end -->
+                            </section>
+                            <!-- hotel-gallery-wrapper section end -->
+
+                            <!-- hotel-description-highlights-wrapper -->
+                            <section class="hotel-description-highlights-wrapper">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="hotel-description-wrapper">
+                                            <div class="hotel-description-content">
+                                                <p>
+                                                  <span class="yellow-bestseller"><i class="fa fa-star mr-2"></i>One of our bestsellers in Bucharest!</span>
+                                                  Set in Bucharest, 1.8 km from Cismigiu Gardens and 2.6 km from National Opera, Semalina Apartment offers air-conditioned accommodation with a balcony and free WiFi. The property features city views and is 2 km from Romanian Athenaeum and 3.3 km from Palace of the Parliament.
+                                                </p>
+                                                <p>The apartment has 1 bedroom, a TV, an equipped kitchenette with a microwave and a fridge, a washing machine, and 1 bathroom with a shower.</p>
+                                                <p>Speaking Spanish, Japanese, English and Swedish, staff will be happy to provide guests with practical information on the area at the reception.</p>
+                                                <p>A terrace is available for guests to use at the apartment.</p>
+                                                <p>Popular points of interest near Semalina Apartment include National Museum of Art, Revolution Square and Stavropoleos Church.</p>
+                                                <p>Sector 1 is a great choice for travellers interested in museums, architecture and food.</p>
+                                                <p>This is our guests' favourite part of Bucharest, according to independent reviews.</p>
+                                                <p>This property also has one of the best-rated locations in Bucharest! Guests are happier about it compared to other properties in the area.</p>
+                                                <p>Couples particularly like the location — they rated it 9.9 for a two-person trip.</p>
+                                                <p>This property is also rated for the best value in Bucharest! Guests are getting more for their money when compared to other properties in this city.</p>
+                                                <div class="show-more-visible">
+                                                    <a href="#" class="btn">Show me more</a>
+                                                </div>
+                                            </div><!--hotel-description-content-->
+
+
+                                            <div class="pop-facilities">
+                                                <h4 class="h4heading">Most populer facilities</h4>
+                                                <ul class="facilities-ul">
+                                                  <li><span class="fa fa-ban mr-1"></span>Non smoking rooms</li>
+                                                  <li><span class="fa fa-wheelchair mr-1"></span>Fitness Centre</li>
+                                                  <li><span class="fa fa-wheelchair mr-1"></span>Facilities for Disabled guests</li>
+                                                  <li><span class="fa fa-wifi mr-1"></span>Wifi available in all areas</li>
+                                                  <li><span class="fa fa-wifi mr-1"></span>Free Wifi</li>
+                                                  <li><span class="fa fa-group mr-1"></span>Family rooms</li>
+                                                </ul>
+                                            </div><!--facilities-->
+                                        </div> <!--hotel-description-wrapper-->
+                                    </div><!-- col-md-8 -->
+                                    <div class="col-md-4">
+                                        <div class="property-highlights-wrapper">
+                                            <div class="property-highlights clearfix">
+                                                <h3>Guests love...</h3>
+                                                <div class="ph-section">
+                                                    <div class="ph-content ">
+                                                      <p class="ph-item">
+                                                        <span class="ph-icon-container">
+                                                          <i class="fa fa-star istar"></i>
+                                                        </span>
+                                                        <span class="ph-item-copy">
+                                                          <span class="ph-item-copy-review-topic">“friendly staff”</span><br>
+                                                          <span class="ph-item-subtitle">7 related reviews</span>
+                                                        </span>
+                                                      </p>
+                                                    </div><!--ph-content-->
+                                                    <div class="ph-content ">
+                                                      <p class="ph-item">
+                                                        <span class="ph-icon-container">
+                                                          <i class="fa fa-star istar"></i>
+                                                        </span>
+                                                        <span class="ph-item-copy">
+                                                          <span class="ph-item-copy-review-topic">“dlr station”</span><br>
+                                                          <span class="ph-item-subtitle">7 related reviews</span>
+                                                        </span>
+                                                      </p>
+                                                    </div><!--ph-content-->
+                                                    <div class="ph-content ">
+                                                      <p class="ph-item">
+                                                        <span class="ph-icon-container">
+                                                          <i class="fa fa-star istar"></i>
+                                                        </span>
+                                                        <span class="ph-item-copy">
+                                                          <span class="ph-item-copy-review-topic">“clean room”</span><br>
+                                                          <span class="ph-item-subtitle">7 related reviews</span>
+                                                        </span>
+                                                      </p>
+                                                    </div><!--ph-content-->
+                                                    <div class="ph-content ">
+                                                      <p class="ph-item">
+                                                        <span class="ph-icon-container">
+                                                          <i class="fa fa-star istar"></i>
+                                                        </span>
+                                                        <span class="ph-item-copy">
+                                                          <span class="ph-item-copy-review-topic">“boutique style”</span><br>
+                                                          <span class="ph-item-subtitle">7 related reviews</span>
+                                                        </span>
+                                                      </p>
+                                                    </div><!--ph-content-->
+
+                                                </div><!--ph-section-->
+                                                <div class="ph-section">
+                                                    <div class="ph-content">
+                                                        <p class="ph-item-header">Perfect for a 4-night stay!</p>
+                                                        <p class="ph-item">
+                                                          <span class="ph-icon-container">
+                                                            <i class="fa fa-map-marker"></i>
+                                                          </span>
+                                                          <span class="ph-item-copy">
+                                                            <span class="ph-item-subtitle">Top Location</span>
+                                                          </span>
+                                                        </p>
+                                                    </div><!--ph-content-->
+                                                </div><!--ph-section-->
+
+                                                <div class="ph-section">
+                                                    <div class="ph-content">
+                                                        <p class="ph-item">
+                                                          <span class="ph-icon-container">
+                                                            <i class="fa fa-wifi"></i>
+                                                          </span>
+                                                          <span class="ph-item-copy ph-wifi-container">
+                                                            <span class=>Free WiFi</span><br>
+                                                            <span class=>Guests consistently rate the WiFi as excellent</span>
+                                                          </span>
+                                                        </p>
+                                                    </div><!--ph-content-->
+                                                </div><!--ph-section-->
+
+                                                <div class="ph-section">
+                                                    <div class="ph-content">
+                                                        <p class="ph-item-header">Loyal Customers</p>
+                                                        <p class="ph-item">
+                                                          <span class="ph-icon-container">
+                                                            <i class="fa fa-check"></i>
+                                                          </span>
+                                                          <span class="ph-item-copy">
+                                                            <span class="ph-item-subtitle">There are more repeat guests here than most other properties</span>
+                                                          </span>
+                                                        </p>
+                                                    </div><!--ph-content-->
+                                                </div><!--ph-section-->
+
+                                                <div class="ph-footer">
+                                                    <button class="btn btn-primary r-btn btn-block" type="submit">Reserve</button>
+                                                </div><!--ph-footer-->
+
+                                            </div><!--property-highlights-->
+
+                                            <div class="property-highlights accuracy-highlights clearfix">
+                                                <span class="accuracy-highlights-rating"><i class="fa fa-check mr-2"></i>Reliable info</span>
+                                                <span class="accuracy-highlights-info">Guests say the description and photos for this property are <b>very accurate.</b></span>
+                                            </div><!--property-highlights-->
+                                        </div><!--property-highlights-wrapper-->
+                                    </div><!-- col-md-4 -->
+                                </div><!-- row -->
+                            </section><!-- //hotel-description-highlights-wrapper -->
+
+                            <!-- alert -->
+                            <section class="my-3 py-3">
+                              <div class="alert alert-success book-alert clearfix">
+                                <div class="book-ico">
+                                      <span class="fa fa-unlock-alt"></span>
+                                </div><!-- book-ico -->
+                                <span class="book-msg"><strong>Book this apartment</strong> Prices may go up. So secure your reservation Today.</span>
+                              </div>
+                            </section><!-- //alert section end -->
+
+                            <!-- availability section -->
+                            <section>
+                              <h3>Availability
+                                <span>
+                                  <div class="rate-gurantee pull-right p-0">
+                                    <a href="#"><i class="bpg-logo"></i>We Price Match</a>
+                                  </div>
+                                </span>
+                              </h3>
+
+                              <div class="available-check-box">
+                                  <p>When would you like to stay at Central London apartment?</p>
+                                  <div class="row">
+                                      <form action="/action_page.php">
+                                        <div class="col-md-8">
+                                          <div class="mb-3 clearfix">
+                                            <div class="t-datepicker">
+                                                <div class="t-check-in">
+
+                                                </div>
+                                                <div class="t-check-out">
+
+                                                </div>
+                                            </div><!--//t-datepicker-->
+                                          </div><!--//form-group-->
+                                          <div class="mb-3">
+                                              <label for="" class="pl-4">Adults</label>
+                                              <select>
+                                                <option value="volvo">select1</option>
+                                                <option value="volvo" selected>2</option>
+                                                <option value="saab">3</option>
+                                                <option value="opel">4</option>
+                                                <option value="audi">5</option>
+                                              </select>
+                                              <label for="" class="pl-4">Children</label>
+                                              <select>
+                                                <option value="volvo">Select1</option>
+                                                <option value="volvo" selected>0</option>
+                                                <option value="volvo">2</option>
+                                                <option value="saab">1</option>
+                                                <option value="opel">3</option>
+                                                <option value="audi">4</option>
+                                              </select>
+                                          </div><!--//form-group-->
+
+                                        </div><!--col-md-8-->
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                              <div class="available-checkbtn">
+                                                <button class="btn btn-primary r-btn btn-block" type="submit">Check Availability</button>
+                                              </div>
+
+                                            </div><!--//form-group-->
+
+                                        </div>
+                                      </form>
+                                  </div><!--row-->
+                              </div><!--available-check-box-->
+                            </section><!-- //-availability section end-//-->
+
+                            <!--accomodation table start-->
+                            <section class="accom-table-wrapper py-5">
+                              <div class="table-responsive">
+                                <table class="table table-bordered accom-table">
+                                  <thead>
+                                    <tr>
+                                      <th style="width:260px;">Accomodation Type</th>
+                                      <th>Sleeps</th>
+                                      <th class="text-center" style="width:100px;">Prices for 4 Nights</th>
+                                      <th>Your Choices</th>
+                                      <th>Quantity</th>
+                                      <th></th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <div class="">
+                                            <a href="#" class="text-underline font-bold"><span class="text-warning"><i class="fa fa-caret-right"></i></span>Standard Double Room</a>
+                                        </div>
+                                        <ul class="mb-3">
+                                          <li>1 Double Bed<span class="mx-3"><i class="fa fa-bed"></i></span></li>
+                                        </ul>
+                                        <div class="roomtype-block">
+                                            <span><i class="fa fa-snowflake-o mr-2"></i>Air Conditioning</span>
+                                            <span><i class="fa fa-bath mr-2"></i>Ensuite Bathroom</span>
+                                            <span><i class="fa fa-television mr-2"></i>Flat screen Tv</span>
+                                            <span><i class="fa fa-wifi mr-2"></i>Free Wifi</span>
+                                        </div>
+                                        <div class="roomtype-block">
+                                            <ul>
+                                              <li><span>• Balcony</span></li>
+                                              <li><span>• Seating Area</span></li>
+                                              <li><span>• Ironing Facilities</span></li>
+                                              <li><span>• Iron</span></li>
+                                              <li><span>• Fan</span></li>
+                                              <li><span>• Washing Machine</span></li>
+                                              <li><span>• Extra Long Beds (> 2 metres)</span></li>
+                                              <li><span>• Heating</span></li>
+                                              <li><span>• Interconnected room(s) available</span></li>
+                                              <li><span>• Sofa</span></li>
+                                              <li><span>• Dining Table </span></li>
+                                              <li><span>• Toilet Paper</span></li>
+                                              <li><span>• Towels</span></li>
+                                            </ul>
+                                        </div>
+
+                                      </td>
+                                      <td>
+                                        <span>
+                                          <svg class="bk-icon -fonticon-occupancy" fill="#000000" height="13" width="13" viewBox="0 0 32 32">
+                                            <path d="M21.545 7.285c0 4.032-3.264 7.29-7.29 7.29s-7.29-3.258-7.29-7.29C6.964 3.259 10.229 0 14.254 0s7.291 3.259 7.291 7.285z"></path>
+                                            <path d="M26.378 19.219c-2.041-.952-6.945-1.525-12.035-1.507h-.191c-5.083-.016-9.987.555-12.029 1.507-1.217.555-2.143 1.989-1.999 3.317L.622 32h27.255l.499-9.464c.14-1.329-.787-2.761-1.998-3.317z"></path>
+                                          </svg>
+                                          <svg class="bk-icon -fonticon-occupancy" fill="#000000" height="13" width="13" viewBox="0 0 32 32">
+                                            <path d="M21.545 7.285c0 4.032-3.264 7.29-7.29 7.29s-7.29-3.258-7.29-7.29C6.964 3.259 10.229 0 14.254 0s7.291 3.259 7.291 7.285z"></path>
+                                            <path d="M26.378 19.219c-2.041-.952-6.945-1.525-12.035-1.507h-.191c-5.083-.016-9.987.555-12.029 1.507-1.217.555-2.143 1.989-1.999 3.317L.622 32h27.255l.499-9.464c.14-1.329-.787-2.761-1.998-3.317z"></path>
+                                          </svg>
+                                        </span>
+                                      </td>
+                                      <td class="text-center">
+                                        <h4 class="text-success">2,152Lei</h4>
+                                        <p class="text-muted"><small>Include taxes and charges</small></p>
+                                        <h5 class="text-danger p-4 tooltip"><b><a href="#" class="text-danger">Great Value</a><span class="tooltiptext text-danger">Jackpot! This is the cheapest price you've seen in London for your dates!<br>
+4 nights (Tue 16Apr - Sat 20Apr)</span></b></h5>
+
+                                      </td>
+                                      <td><span>• Non refundable<span class="pull-right"><i class="fa fa-question-circle"></i></span></span></td>
+                                      <td class="text-center">1</td>
+                                      <td>
+                                        <div class="mb-3">
+                                            <button class="btn btn-primary r-btn btn-block" type="submit">I'll Reserve</button>
+                                            <p>No registration Required</p>
+                                            <p class="text-danger">1 other person looked for your dates in the last 10 minutes</p>
+                                        </div>
+
+                                      </td>
+                                    </tr>
+
+                                  </tbody>
+                                </table>
+                              </div><!--//table-responsive-->
+
+                              <div class="alert alert-info" role="alert">
+                                Staycity Aparthotels Deptford Bridge station may charge additional fees not shown above. See <a href="#" class="alert-link">the fine print</a> to read more about this property
+                              </div>
+                              <div class="alert alert-danger" role="alert">
+                                <span class="fa fa-clock-o mr-3 text-danger"></span>1 property in London like staycity Aparthotels Deptford Bridge Station was booked for your dates in the last 12 hours on our site
+                              </div>
+                            </section>
+                            <!-- accomodation table end -->
+
+                            <!-- Review section start -->
+                            <section>
+                              <div class="host-review-wrapper">
+                                <div class="host-review-heading">
+                                    <h3>Hosted by Olga; Justyna & Lucie<span class="pull-right h-review-score"><span class="hidden-xs">Host Review Score</span><span>9.8</span></span></h3>
+                                </div>
+                              </div><!-- //host-review-wrapper -->
+
+                              <!-- review-media start -->
+                              <div class="media review-media">
+                                <div class="media-left">
+                                  <div class="review-user-img">
+                                    <img class="media-object" src="images/hotel-gallery/gal-thumb1.jpg" alt="...">
+                                  </div>
+                                  <h4>Hosted by Olga; Justyna & Lucie</h4>
+                                </div><!--//media-left-->
+                                <div class="media-body">
+                                  <p>Located in the very heart of Bucharest, our completely newly and modernly renovated place is close to Restaurants and dining, nightlife, old centre, centre and the University of Bucharest. It is just 20 meters of Intercontinental Romania. You’ll love our place because of the location, the people & the ambience. Our place is good for couples, solo adventurers, business travellers, and families (with kids). We are looking forward to warmly welcome you!</p>
+                                  <p>We will be glad to welcome you in the very centre of Bucharest where you will be in the middle of everything you would like to visit. It is just 5 minutes walking to the Old Center where you could find the amazing nightlife of Bucharest in addition to all kinds of restaurants and dining. Subway station is just 10 meters away and it connects you to almost every inch of Bucharest. Free public parking spaces can be found behind the building. Bucharest Henri Coanda International Airport is 16.4 KM away and it is very easily reachable by public transport which would welcome you at the door of the airport and let you just in front of the building. Airport transfers could also be arranged on request.</p>
+                                  Languages spoken: Danish, German, <b>English</b>, Spanish, Finnish, French, Hebrew, Italian, Japanese, Maltese, Dutch, Romanian, Russian, Swedish, Chinese
+                                </div>
+                              </div>
+                              <!-- //review-media end -->
+
+                              <div class="host-review-wrapper">
+                                <div class="contact-host-header">
+                                    <h3>Contact The host</h3>
+                                </div>
+                                <div class="contact-host-content">
+                                    <div class="">
+                                      <p>Need more details before you book your stay? <a href="#" class="btn contact-host-btn">Contact the host</a></p>
+                                    </div>
+                                </div><!-- //contact host content -->
+                              </div><!-- //host-review-wrapper -->
+
+                            </section>
+                            <!-- Review section end -->
+
+                            <!-- Hotel facilities section -->
+                            <section>
+                                <div class="hotel-facility-wrapper">
+                                    <div class="hotel-facility-heading">
+                                        <h3>Facility of staycity Aparthotels Deptford Bridge Station <span class="pull-right"><button class="btn btn-primary r-btn btn-block" type="submit">See Availability</button></span></h3>
+                                        <div class="review-badge">
+                                          <span class="">Great Facilities! Review score, <b>8.4</b></span>
+                                        </div>
+                                    </div><!--//hotel-facility-wrapper-->
+                                    <div class="pop-facilities clearfix">
+                                                <h4 class="h4heading">Most populer facilities</h4>
+                                                <ul class="facilities-ul">
+                                                  <li><span class="fa fa-ban mr-1"></span>Non smoking rooms</li>
+                                                  <li><span class="fa fa-wheelchair mr-1"></span>Fitness Centre</li>
+                                                  <li><span class="fa fa-wheelchair mr-1"></span>Facilities for Disabled guests</li>
+                                                  <li><span class="fa fa-wifi mr-1"></span>Wifi available in all areas</li>
+                                                  <li><span class="fa fa-wifi mr-1"></span>Free Wifi</li>
+                                                  <li><span class="fa fa-group mr-1"></span>Family rooms</li>
+                                                </ul>
+                                    </div><!--//pop-facilities-->
+
+                                    <div class="hotel-facility-list-wrap">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                              <div class="hotel-facility-list-col">
+                                                  <h4 class="hotel-facility-list-heading"><span class="mr-2"><i class="fa fa-bath"></i></span>Bathroom</h4>
+                                                  <ul class="hotel-facility-ul">
+                                                    <li><span><i class="fa fa-check"></i></span>Toilet Paper</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Linen</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Towels</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Towel/Sheet(extra fee)</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Bath or shower</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Ensuite bathroom</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Free toiletries</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Hairdryer</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Shower</li>
+                                                  </ul>
+                                              </div><!--hotel-facility-list-col-->
+                                              <div class="hotel-facility-list-col">
+                                                  <h4 class="hotel-facility-list-heading"><span class="mr-2"><i class="fa fa-bed"></i></span>Bedroom</h4>
+                                                  <ul class="hotel-facility-ul">
+                                                    <li><span><i class="fa fa-check"></i></span>Wardrobe or closet</li>
+                                                  </ul>
+                                              </div><!--hotel-facility-list-col-->
+                                              <div class="hotel-facility-list-col">
+                                                  <h4 class="hotel-facility-list-heading"><span class="mr-2"><i class="fa fa-cutlery"></i></span>Kitchen</h4>
+                                                  <p class="text-muted mt-1"><small>Freedom to eat when you want</small></p>
+                                                  <ul class="hotel-facility-ul">
+                                                    <li><span><i class="fa fa-check"></i></span>Dining Table</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Electric Kettle</li>
+
+                                                  </ul>
+                                              </div><!--hotel-facility-list-col-->
+                                              <div class="hotel-facility-list-col">
+                                                  <h4 class="hotel-facility-list-heading"><span class="mr-2"><i class="fa fa-bath"></i></span>Bathroom</h4>
+                                                  <ul class="hotel-facility-ul">
+                                                    <li><span><i class="fa fa-check"></i></span>Toilet Paper</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Linen</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Towels</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Towel/Sheet(extra fee)</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Bath or shower</li>
+                                                  </ul>
+                                              </div><!--hotel-facility-list-col-->
+
+                                            </div><!--col-md-4-->
+
+                                            <div class="col-md-4">
+                                              <div class="hotel-facility-list-col">
+                                                  <h4 class="hotel-facility-list-heading"><span class="mr-2"><i class="fa fa-cutlery"></i></span>Food & Drink</h4>
+                                                  <ul class="hotel-facility-ul">
+                                                    <li><span><i class="fa fa-check"></i></span>Vending Machine (snacks)</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Vending Machine (drinks)</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Breakfast in the room</li>
+                                                  </ul>
+                                              </div><!--hotel-facility-list-col-->
+                                              <div class="hotel-facility-list-col">
+                                                  <h4 class="hotel-facility-list-heading"><span class="mr-2"><i class="fa fa-bath"></i></span>Bathroom</h4>
+                                                  <ul class="hotel-facility-ul">
+                                                    <li><span><i class="fa fa-check"></i></span>Toilet Paper</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Linen</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Towels</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Towel/Sheet(extra fee)</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Bath or shower</li>
+                                                  </ul>
+                                              </div><!--hotel-facility-list-col-->
+                                              <div class="hotel-facility-list-col">
+                                                  <h4 class="hotel-facility-list-heading"><span class="mr-2"><i class="fa fa-bath"></i></span>Bathroom</h4>
+                                                  <ul class="hotel-facility-ul">
+                                                    <li><span><i class="fa fa-check"></i></span>Toilet Paper</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Linen</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Towels</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Towel/Sheet(extra fee)</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Bath or shower</li>
+                                                  </ul>
+                                              </div><!--hotel-facility-list-col-->
+                                            </div><!--//col-md-4-->
+
+                                            <div class="col-md-4">
+                                              <div class="hotel-facility-list-col">
+                                                  <h4 class="hotel-facility-list-heading"><span class="mr-2"><i class="fa fa-bath"></i></span>Bathroom</h4>
+                                                  <ul class="hotel-facility-ul">
+                                                    <li><span><i class="fa fa-check"></i></span>Toilet Paper</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Linen</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Towels</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Towel/Sheet(extra fee)</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Bath or shower</li>
+                                                  </ul>
+                                              </div><!--hotel-facility-list-col-->
+                                              <div class="hotel-facility-list-col">
+                                                  <h4 class="hotel-facility-list-heading"><span class="mr-2"><i class="fa fa-bath"></i></span>Bathroom</h4>
+                                                  <ul class="hotel-facility-ul">
+                                                    <li><span><i class="fa fa-check"></i></span>Toilet Paper</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Linen</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Towels</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Towel/Sheet(extra fee)</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Bath or shower</li>
+                                                  </ul>
+                                              </div><!--hotel-facility-list-col-->
+                                              <div class="hotel-facility-list-col">
+                                                  <h4 class="hotel-facility-list-heading"><span class="mr-2"><i class="fa fa-bath"></i></span>Bathroom</h4>
+                                                  <ul class="hotel-facility-ul">
+                                                    <li><span><i class="fa fa-check"></i></span>Toilet Paper</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Linen</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Towels</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Towel/Sheet(extra fee)</li>
+                                                    <li><span><i class="fa fa-check"></i></span>Bath or shower</li>
+                                                  </ul>
+                                              </div><!--hotel-facility-list-col-->
+                                            </div><!--//col-md-4-->
+
+
+                                        </div><!--//row-->
+                                    </div><!--//hotel-facility-list-wrap-->
+
+                                    <div class="facility-feedback">
+                                        <p>Missing some information? <a href="#">Yes</a><span>/</span><a href="#">No</a></p>
+                                    </div><!--//facility-feedback-->
+                                </div><!--//hotel-facility-wrapper-->
+                            </section>
+                            <!-- //Hotel facilities section end -->
+                            <!-- House rules section start -->
+                            <section>
+                              <div class="house-rules-wrapper">
+                                  <div class="house-rules-heading">
+                                    <h3>House rules <span class="heading-right"><button class="btn btn-primary r-btn btn-block" type="submit">See Availability</button></span></h3>
+                                    <span class="house-rules-subheading text-muted">Staycity Aparthotels Deptford Bridge Station takes special requests - add in the next step!</span>
+                                  </div><!-- //House rules heading end -->
+
+                                  <div class="house-rules-content">
+                                      <div class="row rules-row">
+                                          <div class="col-md-3">
+                                            <div class="rules-policy">
+                                                <span class="rules-policy-icon"><i class="fa fa-calendar"></i></span>
+                                                <span>Check-in</span>
+                                            </div><!--rules-policy-->
+                                          </div><!--col-md-3-->
+                                          <div class="col-md-9">
+                                              <p>
+                                                <div class="slider-container clearfix">
+                                                    <input type="text" id="slider" class="slider" />
+                                                </div>
+                                              </p>
+                                              <p>Guest are required to show a photo identification upon check-in.</p>
+                                              <p>You'll need to let the property know in advance what time you'll arrive.</p>
+                                          </div><!--col-md-9-->
+                                      </div><!--rules row-->
+
+                                      <div class="row rules-row">
+                                          <div class="col-md-3">
+                                            <div class="rules-policy">
+                                                <span class="rules-policy-icon"><i class="fa fa-calendar"></i></span>
+                                                <span>Check-out</span>
+                                            </div><!--rules-policy-->
+                                          </div><!--col-md-3-->
+                                          <div class="col-md-9">
+                                              <p>
+                                                <div class="slider-container clearfix">
+                                                    <input type="text" id="slider2" class="slider" />
+                                                </div>
+                                              </p>
+                                          </div><!--col-md-9-->
+                                      </div><!--rules row-->
+
+                                      <div class="row rules-row">
+                                          <div class="col-md-3">
+                                            <div class="rules-policy">
+                                                <span class="rules-policy-icon"><i class="fa fa-info-circle"></i></span>
+                                                <span>Cancellations</span>
+                                            </div><!--rules-policy-->
+                                          </div><!--col-md-3-->
+                                          <div class="col-md-9">
+                                              <div class="rules-cancel-head">
+                                                  <b>Free Cancellation</b>
+                                              </div>
+                                              <div class="rules-cancel-txt">
+                                                  <p>You may cancel free of charge until 2 days before arrival. You will be charged the first night if you cancel in the 2 days before arrival.</p>
+                                              </div>
+                                          </div><!--col-md-9-->
+                                      </div><!--rules row-->
+
+                                      <div class="row rules-row">
+                                          <div class="col-md-3">
+                                            <div class="rules-policy">
+                                                <span class="rules-policy-icon"><i class="fa fa-info-circle"></i></span>
+                                                <span>Prepayment</span>
+                                            </div><!--rules-policy-->
+                                          </div><!--col-md-3-->
+                                          <div class="col-md-9">
+                                              <p>Prepayment policies vary according to apartment type. Please check the <a href="#"><b>apartment conditions</b></a> when selecting your apartment above.</p>
+                                          </div><!--col-md-9-->
+                                      </div><!--rules row-->
+
+                                      <div class="row rules-row">
+                                          <div class="col-md-3">
+                                            <div class="rules-policy">
+                                                <span class="rules-policy-icon"><i class="fa fa-info-circle"></i></span>
+                                                <span>Refundable damage deposite</span>
+                                            </div><!--rules-policy-->
+                                          </div><!--col-md-3-->
+                                          <div class="col-md-9">
+                                              <p>A damage deposit of GBP500 is required upon arrival, which is about RON2789.24. This deposit is fully refundable during check out as long as there has been no damge to the propery.</p>
+
+                                          </div><!--col-md-9-->
+                                      </div><!--rules row-->
+
+                                      <div class="row rules-row">
+                                          <div class="col-md-3">
+                                            <div class="rules-policy">
+                                                <span class="rules-policy-icon"><i class="fa fa-child"></i></span>
+                                                <span>Children and extra beds</span>
+                                            </div><!--rules-policy-->
+                                          </div><!--col-md-3-->
+                                          <div class="col-md-9">
+                                              <p>All children are welcome.</p>
+                                              <p>There is no capacity for extra beds in the room</p>
+                                          </div><!--col-md-9-->
+                                      </div><!--rules row-->
+
+                                      <div class="row rules-row">
+                                          <div class="col-md-3">
+                                            <div class="rules-policy">
+                                                <span class="rules-policy-icon"><i class="fa fa-info-circle"></i></span>
+                                                <span>Prepayment</span>
+                                            </div><!--rules-policy-->
+                                          </div><!--col-md-3-->
+                                          <div class="col-md-9">
+                                              <p>Prepayment policies vary according to apartment type. Please check the <a href="#"><b>apartment conditions</b></a> when selecting your apartment above.</p>
+                                          </div><!--col-md-9-->
+                                      </div><!--rules row-->
+
+                                      <div class="row rules-row">
+                                          <div class="col-md-3">
+                                            <div class="rules-policy">
+                                                <span class="rules-policy-icon"><i class="fa fa-info-circle"></i></span>
+                                                <span>Prepayment</span>
+                                            </div><!--rules-policy-->
+                                          </div><!--col-md-3-->
+                                          <div class="col-md-9">
+                                              <p>Prepayment policies vary according to apartment type. Please check the <a href="#"><b>apartment conditions</b></a> when selecting your apartment above.</p>
+                                          </div><!--col-md-9-->
+                                      </div><!--rules row-->
+
+                                  </div><!-- //House rules content end -->
+                              </div><!-- //House rules wrapper end -->
+                            </section>
+                            <!-- //House rules section end -->
+
+                        </div><!--/.col-md-12-->
+                      </div><!--/.row-->
+                  </div><!--/.col-md-9-->
+              </div><!--/.row-->
+        </div><!--/.container-->
+    </section>
+    <!--/main content section end-->
+
+    <!--footer top section start-->
+    <section class="footer-top-section">
+        <div class="container">
+            <div class="footer-top-buttonwrap text-center">
+                  <a class="btn list-property-btn" href="#" role="button">List Your Property</a>
+            </div><!--.footer-top-buttonwrap-->
+            <div class="footer-top-menuwrap text-center">
+                <ul>
+                  <li><a href="#">Tablet version</a></li>
+                  <li><a href="#">Mobile version</a></li>
+                  <li><a href="#">Your account</a></li>
+                  <li><a href="#">Make changes to your booking online</a></li>
+                  <li><a href="#">Customer service help  Become Service help</a></li>
+                  <li><a href="#">Become and affiliate</a></li>
+                  <li><a href="#">Booking.com for Business</a></li>
+                </ul>
+            </div><!--.footer-top-buttonwrap-->
+
+        </div><!--//container-->
+    </section>
+    <!--//footer top section end-->
+
+    <!--footer bottom section end-->
+    <section class="footer-bottom-section">
+        <div class="container">
+            <div class="footer-link">
+                <div class="footer-link-column">
+                    <ul>
+                      <li><a href="#">Countries</a></li>
+                      <li><a href="#">Regions</a></li>
+                      <li><a href="#">Cities</a></li>
+                      <li><a href="#">Districts</a></li>
+                      <li><a href="#">Airports</a></li>
+                      <li><a href="#">Hotels</a></li>
+                      <li><a href="#">Place of interest</a></li>
+                    </ul>
+                </div><!--//footer-link-column-->
+                <div class="footer-link-column">
+                    <ul>
+                      <li><a href="#">Holiday rentals</a></li>
+                      <li><a href="#">Apartments</a></li>
+                      <li><a href="#">Resorts</a></li>
+                      <li><a href="#">Villas</a></li>
+                      <li><a href="#">Hostels</a></li>
+                      <li><a href="#">B&Bs</a></li>
+                      <li><a href="#">Guest houses</a></li>
+                    </ul>
+                </div><!--//footer-link-column-->
+                <div class="footer-link-column">
+                    <ul>
+                      <li><a href="#">Unique places to stay</a></li>
+                      <li><a href="#">Reviews</a></li>
+                      <li><a href="#">Unpacked: Travel articles</a></li>
+                      <li><a href="#">Travel Communities <span class="badge badge-success">New</span></a></li>
+                    </ul>
+                </div><!--//footer-link-column-->
+                <div class="footer-link-column">
+                    <ul>
+                      <li><a href="#">Car hire</a></li>
+                      <li><a href="#">Flight finder</a></li>
+                      <li><a href="#">Restaurant reservations</a></li>
+                      <li><a href="#">Booking.com for Travel Agents</a></li>
+                    </ul>
+                </div><!--//footer-link-column-->
+                <div class="footer-link-column">
+                    <ul>
+                      <li><a href="#">About Booking.com</a></li>
+                      <li><a href="#">Give website feedback</a></li>
+                      <li><a href="#">Customer Service help</a></li>
+                      <li><a href="#">Partner help</a></li>
+                      <li><a href="#">Careers</a></li>
+                      <li><a href="#">Press centre</a></li>
+                      <li><a href="#">Investor relations</a></li>
+                      <li><a href="#">Terms & Conditions</a></li>
+                      <li><a href="#">Privacy & Cookie Statement</a></li>
+                      <li><a href="#">Corporate contact</a></li>
+                    </ul>
+                </div><!--//footer-link-column-->
+
+            </div><!--//footer-link-->
+
+            <div class="footer-offices">
+                <p>Booking.com B.V. is based in Amsterdam in the Netherlands, and is supported internationally by <a href="#">198 offices in 70 countries</a>.</p>
+            </div><!--//footer-offices-->
+
+            <div class="footer-local-info py-4">
+                <div class="col-md-12">
+                    <h5 class="text-center"><a href="#">Extranet Login</a></h5>
+                </div>
+                <div class="col-md-12">
+                  <p class="copy-right"><small>Copyright © 1996–2019 Booking.com™. All rights reserved.</small></p>
+                </div>
+            </div><!--//footer-local-info-->
+
+            <div class="footer-plogos">
+                <div class="footer-plogos-title">
+                  <p>Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.</p>
+                </div>
+                <div class="footer-partner">
+                    <ul>
+                      <li><img src="images/partner/partner1.png" alt></li>
+                      <li><img src="images/partner/partner2.png" alt></li>
+                      <li><img src="images/partner/partner3.png" alt></li>
+                      <li><img src="images/partner/partner4.png" alt></li>
+                      <li><img src="images/partner/partner5.png" alt></li>
+                      <li><img src="images/partner/partner6.png" alt></li>
+                    </ul>
+                </div><!--footer-partner-->
+            </div><!--//footer-plogos-->
+        </div><!--//container-->
+    </section>
+    <!--//footer bottom section end-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--t-datepicker-->
+    <script src="js/t-datepicker.min.js"></script>
+    <script src="js/rSlider.min.js"></script>
+    <script>
+    <!--datepicker-->
+     $(document).ready(function(){
+        // Call global the function
+        $('.t-datepicker').tDatePicker({
+          // options here
+        });
+
+      });
+    </script>
+    <script>
+        (function () {
+            'use strict';
+
+            var init = function () {
+
+                var slider2 = new rSlider({
+                    target: '#slider2',
+                    values: [0, 1, 2, 3, 4, 5, 6, '7', 8],
+                    range: true,
+                    set: [5, 6],
+                    tooltip: false,
+                    onChange: function (vals) {
+                        console.log(vals);
+                    }
+                });
+
+                var slider3 = new rSlider({
+                    target: '#slider3',
+                    values: {min: 0, max: 100},
+                    step: 10,
+                    range: true,
+                    set: [10, 40],
+                    scale: true,
+                    labels: false,
+                    onChange: function (vals) {
+                        console.log(vals);
+                    }
+                });
+
+                var slider = new rSlider({
+                    target: '#slider',
+                    values: ["1:00", "2:00", "3:00", "4:00", "5:00", "6:00", "7:00", "8:00", "9:00", "10:00"],
+                    range: true,
+                    set: ["6:00", "8:00"],
+                    onChange: function (vals) {
+                        console.log(vals);
+                    }
+                });
+            };
+            window.onload = init;
+        })();
+    </script>
+
+  </body>
+</html>
